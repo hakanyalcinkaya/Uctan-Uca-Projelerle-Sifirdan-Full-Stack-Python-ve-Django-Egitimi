@@ -1,8 +1,13 @@
 # Uçtan Uca Projelerle Sıfırdan Full Stack Python ve Django Eğitimi
 
-> Not: İçerik Halen Oluşturulmaktadır. Index içerisindeki sıralama ve içerikler değişebilir
+> Not: İçerikler oluşturulmaktadır. Index içerisindeki sıralama ve içerikler değişebilir
+
+İlerleme Durumu : ![12%](https://progress-bar.dev/12)
 
 - [ ] HTML
+- [ ] Emmet
+- [ ] Git & GitHub
+- [ ] Markdown
 - [ ] CSS
 - [ ] Bootstrap
 - [ ] SCSS
