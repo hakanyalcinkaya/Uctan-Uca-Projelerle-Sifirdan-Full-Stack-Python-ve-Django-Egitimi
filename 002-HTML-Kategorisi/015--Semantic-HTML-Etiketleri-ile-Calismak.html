@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML Etiketleri ile Calismak</title>
+</head>
+<body>
+
+    <!-- https://dev.to/poulamic/writing-semantic-html-3436 -->
+    <!-- 
+        Senaryo:
+        - Navigasyon Olsun
+        - 5 Makale Olsun, Her Makale icinde baslik, 1 Gorsel, 3 Paragraf ve 5 ogeli liste olsun
+        - Footer Olsun
+    -->
+
+    <!-- 
+    Semantic Olmayan Yapi..
+    ul>li*5>lorem1^^hr+(h2>lorem2^img[src="https://picsum.photos/id/$/400/300"]+p*3>lorem5^ul>li*5>{item $}^^hr)*5+div>lorem10 
+    -->
+    <!-- 
+    Semantic Yapi:
+    header>nav>ul>li*5>lorem1^^^^main>(article>h2>lorem2^img[src="https://picsum.photos/id/$/400/300"]+p*3>lorem5^ul>li*5>{item $}^^hr)*5^footer>div>lorem10
+    -->
+    <header>
+        <nav>
+            <ul>
+                <li>Lorem.</li>
+                <li>Perspiciatis.</li>
+                <li>Quidem.</li>
+                <li>Dolore!</li>
+                <li>Odio.</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Lorem, ipsum.</h2>
+            <img src="https://picsum.photos/id/1/400/300" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Sint ut ex cumque expedita.</p>
+            <p>Dolore pariatur quibusdam tempore vitae.</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+            </ul>
+            <hr>
+        </article>
+        <article>
+            <h2>Architecto, tenetur.</h2>
+            <img src="https://picsum.photos/id/2/400/300" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Minima, impedit libero! Cupiditate, consequatur.</p>
+            <p>Veniam cum voluptatem distinctio amet.</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+            </ul>
+            <hr>
+        </article>
+        <article>
+            <h2>Tempora, deserunt!</h2>
+            <img src="https://picsum.photos/id/3/400/300" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Exercitationem libero rerum modi in.</p>
+            <p>Incidunt nulla maxime esse eaque.</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+            </ul>
+            <hr>
+        </article>
+        <article>
+            <h2>Sapiente, natus.</h2>
+            <img src="https://picsum.photos/id/4/400/300" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Repudiandae totam consequuntur vel necessitatibus.</p>
+            <p>Et aliquid cumque dignissimos eius.</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+            </ul>
+            <hr>
+        </article>
+        <article>
+            <h2>Dignissimos, animi?</h2>
+            <img src="https://picsum.photos/id/5/400/300" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Rem repellendus veritatis sit labore.</p>
+            <p>Necessitatibus similique itaque natus ullam?</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+            </ul>
+            <hr>
+        </article>
+    </main>
+    <footer>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, iste!</div>
+    </footer>
+</body>
+</html>
