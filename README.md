@@ -1,10 +1,10 @@
-# Uçtan Uca Projelerle Sıfırdan Full Stack Python ve Django Eğitimi
+# Udemy: Uçtan Uca Projelerle Sıfırdan Full Stack Python ve Django Eğitimi
 
 > Not: İçerikler oluşturulmaktadır. Index içerisindeki sıralama ve içerikler değişebilir
 
-İlerleme Durumu : ![12%](https://progress-bar.dev/12)
+İlerleme Durumu : ![13%](https://progress-bar.dev/12)
 
-- [ ] HTML
+- [x] HTML
 - [ ] Emmet
 - [ ] Git & GitHub
 - [ ] Markdown
