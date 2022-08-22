@@ -2,7 +2,7 @@
 
 > Not: İçerikler oluşturulmaktadır. Index içerisindeki sıralama ve içerikler değişebilir
 
-İlerleme Durumu : ![13%](https://progress-bar.dev/12)
+İlerleme Durumu : ![13%](https://progress-bar.dev/13)
 
 - [x] HTML
 - [ ] Emmet
