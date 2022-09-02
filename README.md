@@ -5,13 +5,14 @@
 İlerleme Durumu : ![13%](https://progress-bar.dev/13)
 
 - [x] HTML
-- [ ] Emmet
+- [x] Emmet
+- [ ] Vercel ile FrontEnd Ağırlıklı Projelerin Yayına Alınması
 - [ ] Git & GitHub
 - [ ] Markdown
 - [ ] CSS
-- [ ] Bootstrap
-- [ ] SCSS
+- [ ] Bootstrap ve Diğer CSS Kütüphaneleri
 - [ ] Python
 - [ ] Django Proje 1
 - [ ] Django Proje 2
 - [ ] Django Proje 3
+- [ ] Django Projelerinin Yayına Alınması
