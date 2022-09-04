@@ -2,13 +2,13 @@
 
 > Not: İçerikler oluşturulmaktadır. Index içerisindeki sıralama ve içerikler değişebilir
 
-İlerleme Durumu : ![15%](https://progress-bar.dev/13)
+İlerleme Durumu : ![15%](https://progress-bar.dev/15)
 
 - [x] HTML
 - [x] Emmet
 - [x] Vercel ile FrontEnd Ağırlıklı Projelerin Yayına Alınması
 - [x] Visual Studio Code ile Çalışmak
-- [ ] Git & GitHub
+- [x] Git & GitHub
 - [ ] Markdown
 - [ ] CSS
 - [ ] Bootstrap ve Diğer CSS Kütüphaneleri
