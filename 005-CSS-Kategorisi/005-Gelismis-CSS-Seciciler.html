@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelismis CSS Secimleriyle Calismak</title>
+    <style>
+        /* Gelismis CSS Secimleriyle Calismak 
+         * https://www.w3schools.com/cssref/css_selectors.asp
+         */
+        .title .info {
+            color: #3498db;
+        }
+        .title.subtitle {
+            color: red;
+        }
+        .title .subtitle {
+            color: blue;
+        }
+
+        .title > span.span-title {
+            color: #e67e22;
+        }
+
+        .title .span-title {
+            color: #1abc9c;
+        }
+
+        ul > a {
+            color: #f39c12;
+        }
+
+        ul > li > a {
+            /* bu bilgi sadece ul icindeki kesinlike li icindeki kesinle a icin uygulanacaktir */
+        }
+
+        a:hover {
+            color: #2ecc71
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!--  -->
+    <h1 class="title info">Lorem, ipsum dolor.</h1>
+    <h2 class="title">
+        sadece h2
+        <span class="info">
+            h2 icindeki info 
+        </span>
+    </h2>
+    <h1>Lorem ipsum dolor sit.</h1>
+    <h2 class="title subtitle">H2 Class-> Title ve SubTitle</h2>
+    <h2 class="title ">H2 Class-> Title icinde <span class="subtitle"> Span Icinde SubTitle</span></h2>
+
+    <h2 class="title">
+        h2 icindeki bilgi
+        <span class="span-title">Lorem, ipsum.</span>
+    </h2>
+
+
+    <h2 class="title">
+        h2 icindeki bilgi
+        <strong class="span-title">Lorem, ipsum.</strong>
+    </h2>
+
+
+    <ul>
+        <a href="">UL Icindeki A</a>
+        <li><a href="">Sadece A -> Lorem.</a></li>
+        <li><a href="">Sadece A -> Sed!</a></li>
+        <li><a href="">Sadece A -> Exercitationem.</a></li>
+    </ul>
+
+</body>
+</html>
