@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Flow+Circular&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSS Bolum Sonu Calismasi v2</title>
+    <!-- 
+        https://getcssscan.com/css-buttons-examples
+        https://freefrontend.com/css-buttons/
+        https://uiverse.io/
+        https://cssbuttongenerator.com/
+        https://cssgradient.io/
+        https://www.colorzilla.com/gradient-editor/
+        https://colorhunt.co/
+        https://coolors.co/palettes/popular
+        https://www.shapedivider.app/
+        https://lordicon.com/icons
+        https://fontawesome.com/
+        https://fonts.google.com/
+        https://css-tricks.com/
+        https://codepen.io/
+        https://flatuicolors.com/palette/defo
+    -->
+
+    <style>
+        /* From uiverse.io by @kirzin */
+        .button {
+            text-decoration: none;
+            position: absolute;
+            border: none;
+            font-size: 14px;
+            font-family: inherit;
+            color: #fff;
+            width: 9em;
+            height: 3em;
+            line-height: 2em;
+            text-align: center;
+            background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+            background-size: 300%;
+            border-radius: 30px;
+            z-index: 1;
+        }
+
+        .button:hover {
+            animation: ani 8s linear infinite;
+            border: none;
+        }
+
+        @keyframes ani {
+            0% {
+                background-position: 0%;
+            }
+
+            100% {
+                background-position: 400%;
+            }
+        }
+
+        .button:before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            z-index: -1;
+            background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+            background-size: 400%;
+            border-radius: 35px;
+            transition: 1s;
+        }
+
+        .button:hover::before {
+            filter: blur(20px);
+        }
+
+        .button:active {
+            background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+        }
+
+        .top-divider {
+            height: 60px;
+            background: rgb(52, 152, 219);
+            background: linear-gradient(0deg, rgba(52, 152, 219, 1) 0%, rgba(46, 204, 113, 1) 100%);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="top-divider">
+
+        <nav class="container">
+            <ul class="list-unstyled p-0 m-0">
+                <li><a href="#">item 1</a></li>
+                <li><a href="#">item 2</a></li>
+                <li><a href="#">item 3</a></li>
+                <li><a href="#">item 4</a></li>
+                <li><a href="#">item 5</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="clear-fix"></div>
+    <div class="container">
+        <div class="left-bar">
+            <ul class="list-unstyled left-bar-links">
+                <li><a href="#">Lorem.</a></li>
+                <li><a href="#">Minima.</a></li>
+                <li><a href="#">Corrupti.</a></li>
+                <li><a href="#">Saepe.</a></li>
+                <li><a href="#">Beatae?</a></li>
+                <li><a href="#">Nobis!</a></li>
+                <li><a href="#">Rem!</a></li>
+                <li><a href="#">Omnis?</a></li>
+                <li><a href="#">Accusamus.</a></li>
+                <li><a href="#">Nulla.</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="card">Lorem, ipsum dolor.
+                <div style="margin-top: 20px;">
+
+                    <a href="#" class="button">Lorem, ipsum.</a>
+                </div>
+            </div>
+            <div class="card">Molestiae, expedita blanditiis.</div>
+            <div class="card">Maxime, voluptas omnis!</div>
+            <div class="card">Architecto, labore quam.</div>
+        </div>
+    </div>
+</body>
+
+</html>
