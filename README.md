@@ -2,7 +2,7 @@
 
 > Not: İçerikler oluşturulmaktadır. Index içerisindeki sıralama ve içerikler değişebilir
 
-İlerleme Durumu : ![18%](https://progress-bar.dev/18)
+İlerleme Durumu : ![30%](https://progress-bar.dev/30)
 
 - [x] HTML
 - [x] Emmet
@@ -11,7 +11,7 @@
 - [x] Git & GitHub
 - [x] GitHub Profili Oluşturmak
 - [x] Markdown
-- [ ] CSS
+- [x] CSS
 - [ ] Bootstrap ve Diğer CSS Kütüphaneleri
 - [ ] Python
 - [ ] Django Proje 1
