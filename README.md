@@ -3,6 +3,7 @@
 > Not: İçerikler oluşturulmaktadır. Index içerisindeki sıralama ve içerikler değişebilir
 
 İlerleme Durumu : ![30%](https://progress-bar.dev/30)
+> [İlerleme Durumunu Ayrıca Instagram Hesabımdan Paylaşıyorum ;) Instagram/hakanyalcinkayadev](https://bit.ly/hy-dev-instagram)
 
 - [x] HTML
 - [x] Emmet
