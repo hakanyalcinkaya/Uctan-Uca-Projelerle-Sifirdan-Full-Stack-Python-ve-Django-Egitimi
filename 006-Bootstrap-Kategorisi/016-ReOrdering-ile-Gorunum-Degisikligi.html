@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- 
+    Reordering
+    https://getbootstrap.com/docs/5.2/layout/columns/#reordering
+-->
+
+
+<!-- .container>.row>.col-sm-3.bg-primary.text-light>h1>{SOL MENU}^^.col-sm-9.bg-info.text-light>h1>{ICERIK} -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3 bg-primary text-light order-last order-sm-first order-lg-last">
+            <h1>SOL MENU - Reordering Kullanildi</h1>
+            <ul>
+                <li>Lorem.</li>
+                <li>Beatae?</li>
+                <li>In.</li>
+                <li>Accusantium!</li>
+                <li>Inventore?</li>
+                <li>Doloremque!</li>
+                <li>Incidunt!</li>
+                <li>Laboriosam.</li>
+                <li>Aut!</li>
+                <li>Cumque.</li>
+            </ul>
+        </div>
+        <div class="col-sm-9 bg-info text-light order-first order-sm-last order-lg-first">
+            <h1>ICERIK</h1>
+            <hr>
+            <article>
+                <h1>BASLIK 1</h1>
+                <p>Lorem, ipsum dolor.</p>
+                <p>Ipsam, ab maxime.</p>
+                <p>Recusandae, ducimus veniam?</p>
+            </article>
+            <article>
+                <h1>BASLIK 2</h1>
+                <p>Lorem, ipsum dolor.</p>
+                <p>Laborum, facere dolores.</p>
+                <p>Cum, earum tempora.</p>
+            </article>
+            <article>
+                <h1>BASLIK 3</h1>
+                <p>Lorem, ipsum dolor.</p>
+                <p>Est, veritatis placeat.</p>
+                <p>Doloribus, pariatur officia.</p>
+            </article>
+            <article>
+                <h1>BASLIK 4</h1>
+                <p>Lorem, ipsum dolor.</p>
+                <p>Minima, ratione illum.</p>
+                <p>Molestiae, quis quasi.</p>
+            </article>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+</html>
