@@ -2,7 +2,7 @@
 
 > Not: İçerikler oluşturulmaktadır. Index içerisindeki sıralama ve içerikler değişebilir
 
-İlerleme Durumu : ![30%](https://progress-bar.dev/30)
+İlerleme Durumu : ![40%](https://progress-bar.dev/40)
 > [İlerleme Durumunu Ayrıca Instagram Hesabımdan Paylaşıyorum ;) Instagram/hakanyalcinkayadev](https://bit.ly/hy-dev-instagram)
 
 - [x] HTML
@@ -13,7 +13,7 @@
 - [x] GitHub Profili Oluşturmak
 - [x] Markdown
 - [x] CSS
-- [ ] Bootstrap ve Diğer CSS Kütüphaneleri
+- [x] Bootstrap ve Diğer CSS Kütüphaneleri
 - [ ] Python
 - [ ] Django Proje 1
 - [ ] Django Proje 2
