@@ -2,7 +2,7 @@
 
 > Not: İçerikler oluşturulmaktadır. Index içerisindeki sıralama ve içerikler değişebilir
 
-İlerleme Durumu : ![40%](https://progress-bar.dev/40)
+İlerleme Durumu : ![50%](https://progress-bar.dev/50)
 > [İlerleme Durumunu Ayrıca Instagram Hesabımdan Paylaşıyorum ;) Instagram/hakanyalcinkayadev](https://bit.ly/hy-dev-instagram)
 
 - [x] HTML
