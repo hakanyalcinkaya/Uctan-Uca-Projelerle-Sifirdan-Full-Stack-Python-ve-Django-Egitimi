@@ -4,6 +4,7 @@
 
 # Virtualenv Ignore
 **/*_venv/*
+**/*/migrations/0*.py
 
 ###########################################
 .DS_*
