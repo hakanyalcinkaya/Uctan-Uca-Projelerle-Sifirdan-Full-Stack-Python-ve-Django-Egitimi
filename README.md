@@ -15,6 +15,7 @@
 - [x] CSS
 - [x] Bootstrap ve Diğer CSS Kütüphaneleri
 - [x] Python
+- [x] VirtualEnv ile Django Kurulumu 
 - [ ] Django Proje 1
 - [ ] Django Proje 2
 - [ ] Django Proje 3
