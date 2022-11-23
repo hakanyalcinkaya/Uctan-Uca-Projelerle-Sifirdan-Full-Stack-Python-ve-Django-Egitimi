@@ -15,11 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.http import HttpResponse
+from page.views import home
 
 
-def home(request):
-    return HttpResponse('Ana Sayfaya Hosgeldiniz..')
+# from django.http import HttpResponse
+# Olmamasi Gereken Yapi
+
+# def home(request):
+#     print(request)
+#     return HttpResponse('Ana Sayfaya Hosgeldiniz..')
 
 
 # Danisma :)
