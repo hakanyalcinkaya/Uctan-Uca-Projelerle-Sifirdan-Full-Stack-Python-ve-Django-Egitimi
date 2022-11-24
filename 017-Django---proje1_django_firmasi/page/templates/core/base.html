@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="utf-8">
@@ -13,17 +13,17 @@
     <!-- NAV -->
     <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Django Firmasi</a>
+            <a class="navbar-brand" href="{% url 'home' %}">Django Firmasi</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link " aria-current="page" href="index.html">Ana Sayfa</a>
-                    <a class="nav-link " href="hakkimizda.html">Hakkimizda</a>
-                    <a class="nav-link" href="vizyonumuz.html">Vizyonumuz</a>
-                    <a class="nav-link active" href="iletisim.html">Iletisim</a>
+                    <a class="nav-link {% if request.path == '/' %}active{% endif %}" aria-current="page" href="{% url 'home' %}">Ana Sayfa</a>
+                    <a class="nav-link {% if request.path == '/hakkimizda/' %}active{% endif %}" href="{% url 'about_us' %}">Hakkimizda</a>
+                    <a class="nav-link {% if request.path == '/vizyonumuz/' %}active{% endif %}" href="{% url 'vision' %}">Vizyonumuz</a>
+                    <a class="nav-link {% if request.path == '/iletisim/' %}active{% endif %}" href="{% url 'contact_us' %}">Iletisim</a>
                 </div>
             </div>
         </div>
@@ -136,10 +136,6 @@
         </div>
     </div>
     <!-- FOOTER END -->
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

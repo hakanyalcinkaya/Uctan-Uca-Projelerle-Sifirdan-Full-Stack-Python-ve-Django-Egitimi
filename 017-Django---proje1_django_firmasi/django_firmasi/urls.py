@@ -33,9 +33,9 @@ from page.views import (
 
 # Danisma :)
 urlpatterns = [
-    path('', home_view,),
-    path('hakkimizda/', about_us_view,),
-    path('vizyonumuz/', vision_view,),
-    path('iletisim/', contact_us_view,),
+    path('', home_view, name='home'),
+    path('hakkimizda/', about_us_view, name='about_us'),
+    path('vizyonumuz/', vision_view, name='vision'),
+    path('iletisim/', contact_us_view, name='contact_us'),
     path('admin/', admin.site.urls),
 ]
