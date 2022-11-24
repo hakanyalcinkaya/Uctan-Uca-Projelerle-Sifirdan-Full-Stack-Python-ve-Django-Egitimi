@@ -9,20 +9,7 @@
             <img src="https://picsum.photos/id/41/1200/450" alt="" class="w-100">
         </div>
     </div>
-    <!-- Hero Content -->
-    <div class="row bg-dark p-4 border-bottom border-top">
-        <div class="col-sm-8 offset-sm-2">
-            <div class="h-100 p-5 bg-light border rounded-3">
-                <h2 class="text-center display-1">VIZYONUMUZ :)</h2>
-                <p class="text-center">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis repellat in eum? Maxime
-                    veniam atque
-                    beatae hic impedit quis architecto.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- Hero Content END -->
+    {% include 'page/components/hero_component.html' with hero_title=page_title %}
 </div>
 {% endblock container-fluid %}
 

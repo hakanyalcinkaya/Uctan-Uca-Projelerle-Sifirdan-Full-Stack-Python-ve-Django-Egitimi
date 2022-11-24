@@ -13,9 +13,11 @@ def home_view(request):
 
 def about_us_view(request):
     page_title = "Hakkımızda"
-    context = dict(
-        page_title=page_title,
-    )
+    hero_content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut ornare risus. Aliquam ac eleifend dolor. Suspendisse consectetur, orci at laoreet efficitur, sem tellus scelerisque neque, quis fringilla dolor erat id leo. Curabitur non malesuada nibh. In eu ultricies elit. Quisque tincidunt convallis tellus sit amet eleifend. Nullam nec justo pellentesque, laoreet purus eget, accumsan nisi."
+    context = {
+        "page_title": page_title,
+    }
+    context['hero_content'] = hero_content
     return render(request, "page/about_us.html", context)
 
 
@@ -29,7 +31,9 @@ def vision_view(request):
 
 def contact_us_view(request):
     page_title = "İletişim"
+    hero_content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut ornare risus. Aliquam ac eleifend dolor. Suspendisse consectetur, orci at laoreet efficitur, sem tellus scelerisque neque, quis fringilla dolor erat id leo. Curabitur non malesuada nibh. In eu ultricies elit. Quisque tincidunt convallis tellus sit amet eleifend. Nullam nec justo pellentesque, laoreet purus eget, accumsan nisi."
     context = dict(
         page_title=page_title,
+        hero_content=hero_content,
     )
     return render(request, "page/contact_us.html", context)
