@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from page.views import (
-    home_view, 
     about_us_view, 
     contact_us_view,
+    home_view, 
+    vision_view,
 )
 
 
@@ -34,6 +35,7 @@ from page.views import (
 urlpatterns = [
     path('', home_view,),
     path('hakkimizda/', about_us_view,),
+    path('vizyonumuz/', vision_view,),
     path('iletisim/', contact_us_view,),
     path('admin/', admin.site.urls),
 ]
