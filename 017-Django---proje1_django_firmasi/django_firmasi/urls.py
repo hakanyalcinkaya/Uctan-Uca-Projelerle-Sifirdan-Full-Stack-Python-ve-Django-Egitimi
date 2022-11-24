@@ -14,13 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from page.views import (
-    about_us_view, 
-    contact_us_view,
-    home_view, 
-    vision_view,
-)
+from django.urls import path, include
+
 
 
 # from django.http import HttpResponse
@@ -33,9 +28,6 @@ from page.views import (
 
 # Danisma :)
 urlpatterns = [
-    path('', home_view, name='home'),
-    path('hakkimizda/', about_us_view, name='about_us'),
-    path('vizyonumuz/', vision_view, name='vision'),
-    path('iletisim/', contact_us_view, name='contact_us'),
+    path('', include('page.urls'), ),  # PAGE Application icindeki urls.py den aliyoruz..
     path('admin/', admin.site.urls),
 ]

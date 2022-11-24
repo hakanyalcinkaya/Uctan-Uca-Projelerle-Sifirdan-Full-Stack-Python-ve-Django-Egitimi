@@ -133,8 +133,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # DONE: D.T.L. Base Yapisini Olustur
 # DONE: HTML Dosyalarini Olustur
 # DONE: (Don't repeat yourself (DRY ...)
-# TODO: AnaSayfadaki Karisik Yapidan Kurtul!
-# TODO: App icin urls.py olustur
+# DONE: AnaSayfadaki Karisik Yapidan Kurtul!
+# DONE: App icin urls.py olustur
 # TODO: Statik Dosyalari Calistir
 # TODO: Sayfalari Fake DB icerisinde tutup SLUG ile cagirmaya calisalim..
-#  
+# TODO: Baska Bir App ekleyeyip Moduler Yapiyi anlamaya calisalim
