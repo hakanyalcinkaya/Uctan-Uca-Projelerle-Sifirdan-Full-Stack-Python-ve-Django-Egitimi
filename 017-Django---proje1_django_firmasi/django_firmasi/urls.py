@@ -29,6 +29,6 @@ from django.urls import path, include
 # Danisma :)
 urlpatterns = [
     path('urunler/', include('product.urls'), ), 
-    path('', include('page.urls'), ),  # PAGE Application icindeki urls.py den aliyoruz..
     path('admin/', admin.site.urls),
+    path('', include('page.urls'), ),  # PAGE Application icindeki urls.py den aliyoruz..
 ]
