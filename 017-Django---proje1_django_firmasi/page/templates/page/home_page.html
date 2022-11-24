@@ -1,6 +1,6 @@
 {% extends 'core/base.html' %}
-{% block content %}
 
+{% block container-fluid %}
   <!-- Carousel -->
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
     <div class="carousel-indicators">
@@ -73,9 +73,9 @@
     </div>
     <!-- About Us END -->
   </div>
+{% endblock container-fluid %}
 
-
-  <div class="container">
+{% block container %}
     <!-- Products -->
     <div class="row">
       <div class="col-sm-12">
@@ -118,25 +118,4 @@
 
     </div>
     <!-- Products END -->
-
-    <!-- Projects -->
-    <div class="row my-4">
-      <!-- .col-sm*8>img.w-100[src="https://picsum.photos/id/2$/100/80"] -->
-      <div class="col-sm-12">
-        <h2>Projelerimiz</h2>
-        <hr>
-      </div>
-      <div class="col-sm col-6 mb-1"><img src="https://picsum.photos/id/21/100/80" alt="" class="w-100 img-thumbnail"></div>
-      <div class="col-sm col-6 mb-1"><img src="https://picsum.photos/id/22/100/80" alt="" class="w-100 img-thumbnail"></div>
-      <div class="col-sm col-6 mb-1"><img src="https://picsum.photos/id/23/100/80" alt="" class="w-100 img-thumbnail"></div>
-      <div class="col-sm col-6 mb-1"><img src="https://picsum.photos/id/24/100/80" alt="" class="w-100 img-thumbnail"></div>
-      <div class="col-sm col-6 mb-1"><img src="https://picsum.photos/id/25/100/80" alt="" class="w-100 img-thumbnail"></div>
-      <div class="col-sm col-6 mb-1"><img src="https://picsum.photos/id/26/100/80" alt="" class="w-100 img-thumbnail"></div>
-      <div class="col-sm col-6 mb-1"><img src="https://picsum.photos/id/27/100/80" alt="" class="w-100 img-thumbnail"></div>
-      <div class="col-sm col-6 mb-1"><img src="https://picsum.photos/id/28/100/80" alt="" class="w-100 img-thumbnail"></div>
-    </div>
-  <!-- Projects END -->
-
-
-  </div>
-{% endblock content %}
+{% endblock container %}
