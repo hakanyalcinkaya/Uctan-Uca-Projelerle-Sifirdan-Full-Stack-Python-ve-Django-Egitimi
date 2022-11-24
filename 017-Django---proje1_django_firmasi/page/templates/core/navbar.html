@@ -1,0 +1,19 @@
+<!-- NAV -->
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'home' %}">Django Firmasi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link {% if request.path == '/' %}active{% endif %}" aria-current="page" href="{% url 'home' %}">Ana Sayfa</a>
+                <a class="nav-link {% if request.path == '/hakkimizda/' %}active{% endif %}" href="{% url 'about_us' %}">Hakkimizda</a>
+                <a class="nav-link {% if request.path == '/vizyonumuz/' %}active{% endif %}" href="{% url 'vision' %}">Vizyonumuz</a>
+                <a class="nav-link {% if request.path == '/iletisim/' %}active{% endif %}" href="{% url 'contact_us' %}">Iletisim</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- NAV END -->
