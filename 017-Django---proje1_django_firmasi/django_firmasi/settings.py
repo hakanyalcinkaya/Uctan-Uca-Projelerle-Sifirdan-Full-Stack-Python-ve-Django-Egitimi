@@ -139,6 +139,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # DONE: (Don't repeat yourself (DRY ...)
 # DONE: AnaSayfadaki Karisik Yapidan Kurtul!
 # DONE: App icin urls.py olustur
-# TODO: Statik Dosyalari Calistir
+# DONE: Statik Dosyalari Calistir
 # TODO: Sayfalari Fake DB icerisinde tutup SLUG ile cagirmaya calisalim..
 # TODO: Baska Bir App ekleyeyip Moduler Yapiyi anlamaya calisalim
