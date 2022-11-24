@@ -5,21 +5,13 @@
         <h2>Projelerimiz</h2>
         <hr>
     </div>
-    <div class="col-sm col-6 mb-1"><img src="https://picsum.photos/id/21/100/80" alt="" class="w-100 img-thumbnail">
-    </div>
-    <div class="col-sm col-6 mb-1"><img src="https://picsum.photos/id/22/100/80" alt="" class="w-100 img-thumbnail">
-    </div>
-    <div class="col-sm col-6 mb-1"><img src="https://picsum.photos/id/23/100/80" alt="" class="w-100 img-thumbnail">
-    </div>
-    <div class="col-sm col-6 mb-1"><img src="https://picsum.photos/id/24/100/80" alt="" class="w-100 img-thumbnail">
-    </div>
-    <div class="col-sm col-6 mb-1"><img src="https://picsum.photos/id/25/100/80" alt="" class="w-100 img-thumbnail">
-    </div>
-    <div class="col-sm col-6 mb-1"><img src="https://picsum.photos/id/26/100/80" alt="" class="w-100 img-thumbnail">
-    </div>
-    <div class="col-sm col-6 mb-1"><img src="https://picsum.photos/id/27/100/80" alt="" class="w-100 img-thumbnail">
-    </div>
-    <div class="col-sm col-6 mb-1"><img src="https://picsum.photos/id/28/100/80" alt="" class="w-100 img-thumbnail">
-    </div>
+
+    {% for item in FAKE_DB_PROJECTS %}
+        <div class="col-sm col-6 mb-1">
+            <img src="{{ item }}" alt="" class="w-100 img-thumbnail">
+        </div>
+    {% empty %}
+        <h3 class="text-danger">Proje Bulunamadi..</h3>
+    {% endfor %}   
 </div>
 <!-- Projects END -->

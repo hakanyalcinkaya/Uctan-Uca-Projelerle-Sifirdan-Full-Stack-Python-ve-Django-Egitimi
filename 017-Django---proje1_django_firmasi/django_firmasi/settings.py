@@ -130,10 +130,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # DONE: Hakkimizda, Iletisim Gibi Sayfalar Icin View olustur
 # DONE: createsuperuser ile Admin/Superuser olustur
 # DONE: Django makemigrations & migrate 
-# TODO: D.T.L. Base Yapisini Olustur
+# DONE: D.T.L. Base Yapisini Olustur
+# DONE: HTML Dosyalarini Olustur
+# DONE: (Don't repeat yourself (DRY ...)
 # TODO: AnaSayfadaki Karisik Yapidan Kurtul!
-# TODO: HTML Dosyalarini Olustur
-# TODO: DRY? 
 # TODO: App icin urls.py olustur
 # TODO: Statik Dosyalari Calistir
 # TODO: Sayfalari Fake DB icerisinde tutup SLUG ile cagirmaya calisalim..
