@@ -145,4 +145,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # DONE: App icin urls.py olustur
 # DONE: Statik Dosyalari Calistir
 # DONE: Sayfalari Fake DB icerisinde tutup SLUG ile cagirmaya calisalim..
-# TODO: Baska Bir App ekleyeyip Moduler Yapiyi anlamaya calisalim
+# DONE: Baska Bir App ekleyeyip Moduler Yapiyi anlamaya calisalim
