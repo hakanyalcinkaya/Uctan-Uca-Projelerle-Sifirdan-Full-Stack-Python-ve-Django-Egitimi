@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # My Apss:
     'page',
+    'product',
 ]
 
 MIDDLEWARE = [
@@ -140,5 +141,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # DONE: AnaSayfadaki Karisik Yapidan Kurtul!
 # DONE: App icin urls.py olustur
 # DONE: Statik Dosyalari Calistir
-# TODO: Sayfalari Fake DB icerisinde tutup SLUG ile cagirmaya calisalim..
+# DONE: Sayfalari Fake DB icerisinde tutup SLUG ile cagirmaya calisalim..
 # TODO: Baska Bir App ekleyeyip Moduler Yapiyi anlamaya calisalim

@@ -1,0 +1,16 @@
+{% extends 'core/base.html' %}
+
+{% block title %}{{ page_title }} | {% endblock title%}
+
+
+{% block container %}
+
+<div class="row">
+    <div class="col-sm-6 offset-sm-3">
+        <img src="{{ item.url }}" alt="" class="w-100 img-thumbnail">
+        <h1>{{ item.title }}</h1>
+        <p>{{ item.detail }} </p>
+    </div>
+</div>
+
+{% endblock container %}
