@@ -1,4 +1,4 @@
-# - Django - Proje1:
+# **Django** Proje1:
 ## FAKE_DB ile Statik İçerikli Kurumsal Web Sitesi Projesi
 
 ### Projenin Amacı:
