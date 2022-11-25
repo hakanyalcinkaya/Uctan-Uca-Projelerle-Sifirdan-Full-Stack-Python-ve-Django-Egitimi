@@ -34,7 +34,7 @@ Todo.objects.create(title="Shell Uzerinden Olusturulan Todo")
 Todo.objects.create(title="Shell Uzerinden Yeni Olusturulan Todo", is_active=True)
 
 # is_active olanlari goster
-Todo.objects.filter(is_active=True)
+Todo.objects.filter(is_active=True)  # SELECT * FROM todo WHERE is_active=True
 
 # is_active olanlari say:
 Todo.objects.filter(is_active=True).count()
