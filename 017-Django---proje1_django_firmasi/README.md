@@ -64,3 +64,70 @@ python manage.py changepassword kullanici_adi
 
 ## Projelere Katkıda Bulunabilirsiniz ve/veya README Dosyasının Daha Detaylı Hale Gelmesine Katkıda Bulunabilirsiniz
 Aldığınız notları ve insanların işine yarayacağını düşündüğünüz bilgileri ekleyebilirsiniz. Böylelikle bu repo içerisinde sizinde isminiz geçer ve birçok kişiye destek olabilirsiniz. Başarılar dilerim 🔥
+
+```
+.
+├── README.md
+├── db.sqlite3
+├── django_firmasi
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── project_context_processors.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── manage.py
+├── page
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── fake_db
+│   │   └── pages.py
+│   ├── migrations
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── templates
+│   │   └── page
+│   │       ├── components
+│   │       │   ├── hero_component.html
+│   │       │   └── home_carousel.html
+│   │       ├── deleted
+│   │       │   ├── about_us.html
+│   │       │   ├── contact_us.html
+│   │       │   └── vision.html
+│   │       ├── home_page.html
+│   │       └── page_detail.html
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── product
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── fake_db
+│   │   └── products.py
+│   ├── migrations
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── templates
+│   │   └── product
+│   │       ├── components
+│   │       │   └── card.html
+│   │       ├── product_detail.html
+│   │       └── products.html
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── requirements.txt
+├── static_files
+│   ├── css
+│   │   └── bootstrap.min.css
+│   └── js
+│       └── bootstrap.bundle.min.js
+├── templates
+│   └── core
+│       ├── base.html
+│       ├── footer.html
+│       ├── navbar.html
+│       └── projects.html
+```
