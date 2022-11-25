@@ -1,7 +1,7 @@
 # **Django** Proje1:
 ## FAKE_DB ile Statik İçerikli Kurumsal Web Sitesi Projesi
 
-### Projenin Amacı:
+### Projenin Amaçları:
 * Projenin hedefi birden fazla modül(App) ile Django projesi geliştirmek
 * Django Template Language(DTL)'i anlamak
 * Statik dosyalarla çalışmak
