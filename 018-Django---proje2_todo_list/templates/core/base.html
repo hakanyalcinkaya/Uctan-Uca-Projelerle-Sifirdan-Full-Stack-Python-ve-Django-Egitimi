@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 </head>
 <body>
-    <div class="container">
+    {% include 'core/navbar.html' %}
+    <div class="container my-5">
         {% block container%}
         {% endblock container%}
     </div>
     <!-- BOOTSTRAP JS -->
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    
+    {% include 'core/footer.html' %}
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 </body>
 </html>
