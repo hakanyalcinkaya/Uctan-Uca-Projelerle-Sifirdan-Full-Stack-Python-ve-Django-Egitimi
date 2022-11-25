@@ -38,4 +38,15 @@ Todo.objects.filter(is_active=True)  # SELECT * FROM todo WHERE is_active=True
 
 # is_active olanlari say:
 Todo.objects.filter(is_active=True).count()
+
+# UPDATE:
+# Yapilan sorguya uyan objelerin istenilen alanlari degistirilebilir..
+Todo.objects.filter(is_active=False).update(is_active=True)
+
+# Title icinde Django gecmeyenleri bul ve Django ekle
+todos = Todo.objects.exclude(title__icontains="django")
+
+for item in todos:
+    item.title = f"{item.title} - Django"
+    item.save()
 ```
