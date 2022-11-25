@@ -62,5 +62,5 @@ python manage.py changepassword kullanici_adi
 # NOT: Kullanici Adini changepassword un hemen yanina yazmaniz gerekiyor.. eger yazmazsaniz sistem kullanici adinin sifresini degistirmek istediginizi Django varsayar(default behavior).
 ```
 
-## Katkıda Bulunmak:
+## Projelere Katkıda Bulunabilirsiniz ve/veya README Dosyasının Daha Detaylı Hale Gelmesine Katkıda Bulunabilirsiniz
 Aldığınız notları ve insanların işine yarayacağını düşündüğünüz bilgileri ekleyebilirsiniz. Böylelikle bu repo içerisinde sizinde isminiz geçer ve birçok kişiye destek olabilirsiniz. Başarılar dilerim 🔥
