@@ -1,0 +1,16 @@
+{% extends 'core/base.html' %}
+
+{% block container %}
+
+
+<div class="col-sm-6 offset-sm-3">
+    <a href="/" class="btn btn-primary">Ana Sayfa</a>
+    <h1 class="text-primary">{{ todo.title }}</h1>
+    <p>
+        {{ todo.content }}
+    </p>
+
+</div>
+
+
+{% endblock container %}
