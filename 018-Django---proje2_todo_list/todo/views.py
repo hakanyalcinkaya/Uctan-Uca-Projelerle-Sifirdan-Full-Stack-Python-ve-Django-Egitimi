@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Todo
 # from django.http import HttpResponse
 from django.http import Http404
@@ -20,12 +20,20 @@ def home_view(request):
     return render(request, 'todo/todo_list.html', context)
 
 
+# def todo_detail_view(request, id):
+#     try:
+#         todo = Todo.objects.get(pk=id)
+#         context = dict(
+#             todo=todo,
+#         )
+#         return render(request, 'todo/todo_detail.html', context)
+#     except Todo.DoesNotExist:
+#         raise Http404
+
 def todo_detail_view(request, id):
-    try:
-        todo = Todo.objects.get(pk=id)
-        context = dict(
-            todo=todo,
-        )
-        return render(request, 'todo/todo_detail.html', context)
-    except Todo.DoesNotExist:
-        raise Http404
+    todo = get_object_or_404(Todo, pk=id)
+    context = dict(
+        todo=todo,
+    )
+    return render(request, 'todo/todo_detail.html', context)
+    

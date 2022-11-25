@@ -19,6 +19,6 @@ from todo.views import home_view, todo_detail_view
 
 urlpatterns = [
     path('', home_view),
-    path('todo/<int:id>/', todo_detail_view),
+    path('todo/<int:id>/', todo_detail_view, name='todo_detail'),
     path('admin/', admin.site.urls),
 ]

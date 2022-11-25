@@ -7,7 +7,7 @@
     <h1 class="text-primary">TODO LIST ( {{todos.count}} )</h1>
     <div class="list-group">
         {% for todo in todos %}
-        <a href="#" class="list-group-item list-group-item-action">{{ todo.title }}</a>
+        <a href="{% url 'todo_detail' id=todo.pk %}" class="list-group-item list-group-item-action">{{ todo.title }}</a>
         {% endfor %}
     </div>
 
