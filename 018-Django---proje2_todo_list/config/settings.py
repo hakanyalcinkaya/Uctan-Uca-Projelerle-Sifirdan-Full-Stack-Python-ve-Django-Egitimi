@@ -140,3 +140,18 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Yapilan Islemler:
+# Django ORM Query -> all, filter, explude, create, get incelendi
+# Django ORM ile veriler guncellendi (update)
+# Instance icindeki bilgiler degistirildi ve kaydedildi (save)
+# Static dosya yapisi olusturuldu
+# makemigrations ve migrate kavramlari incelendi
+# settings icerisindeki APP yapilari ayrildi
+
+# PATRON CILDIRDI :)
+# TODO: Todo'nun kategorisi olsun? (tek kategori ise foreign key )
+# TODO: Kategori icindeki Tasklar Neler?
+# TODO: Todo ekleyen kisi kim? (foreign key)
+# TODO: Todo'ya tag ekleyelim, birden fazla tag eklenebilir olsun (ManyToMany)
+# TODO: Tag'a Ait Todo'lar Neler?
