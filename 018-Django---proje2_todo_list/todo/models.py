@@ -32,3 +32,12 @@ class Todo(models.Model):
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse(
+            'todo_detail_view',
+            kwargs={
+                "category_slug": self.category.slug,
+                "id": self.pk,
+            }
+        )

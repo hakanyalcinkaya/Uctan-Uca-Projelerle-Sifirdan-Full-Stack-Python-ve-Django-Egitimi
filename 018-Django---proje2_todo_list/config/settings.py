@@ -152,7 +152,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # PATRON CILDIRDI :)
 # DONE: Todo'nun kategorisi olsun? (tek kategori ise foreign key )
-# TODO: Kategori icindeki Tasklar Neler?
+# DONE: Kategori icindeki Tasklar Neler?
 # TODO: Todo ekleyen kisi kim? (foreign key)
+# TODO: Todo'yu ekleyen kisi sadece kendi TODO itemlarini gorebilsin
 # TODO: Todo'ya tag ekleyelim, birden fazla tag eklenebilir olsun (ManyToMany)
 # TODO: Tag'a Ait Todo'lar Neler?

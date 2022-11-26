@@ -44,8 +44,8 @@ def category_view(request, category_slug):
     return render(request, 'todo/todo_list.html', context)
 
 
-def todo_detail_view(request, id):
-    todo = get_object_or_404(Todo, pk=id)
+def todo_detail_view(request, category_slug, id):
+    todo = get_object_or_404(Todo, category__slug=category_slug, pk=id)
     context = dict(
         todo=todo,
     )
