@@ -1,6 +1,13 @@
 from django.contrib import admin
 from .models import Todo, Category
 
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = [
+        'pk',
+        'title',
+        'is_active',
+    ]
+    
 
 class TodoAdmin(admin.ModelAdmin):
     list_display = [
@@ -11,7 +18,7 @@ class TodoAdmin(admin.ModelAdmin):
         # 'created_at',
         # 'updated_at',
     ]
-    
+
     list_display_links = [
         'pk',
         'category',
@@ -19,4 +26,4 @@ class TodoAdmin(admin.ModelAdmin):
     ]
 
 admin.site.register(Todo, TodoAdmin)
-admin.site.register(Category)
+admin.site.register(Category, CategoryAdmin)

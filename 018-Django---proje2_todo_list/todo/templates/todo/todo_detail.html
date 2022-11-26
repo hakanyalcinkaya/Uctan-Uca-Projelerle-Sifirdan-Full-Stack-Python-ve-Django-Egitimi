@@ -5,10 +5,14 @@
 
 <div class="col-sm-6 offset-sm-3">
     <a href="/" class="btn btn-primary">Ana Sayfa</a>
-    <h1 class="text-primary">{{ todo.title }}</h1>
+    <h1 class="text-primary">{{ todo.title }} <small class="text-muted">{{ todo.category }}</small></h1>
     <p>
         {{ todo.content }}
     </p>
+    <ul>
+        <li>Olusturuldugu Zaman: {{ todo.created_at|date:"d/m/Y H:s" }}</li>
+        <li>En Son Guncellendigi Zaman: {{ todo.updated_at|date:"d/m/Y H:s" }}</li>
+    </ul>
 
 </div>
 
