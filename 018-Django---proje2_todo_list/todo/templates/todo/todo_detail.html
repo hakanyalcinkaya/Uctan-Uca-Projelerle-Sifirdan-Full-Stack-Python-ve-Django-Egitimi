@@ -21,7 +21,11 @@
             </ul>
             <ul class="list-inline">
                 {% for tag in todo.tag.all %}
-                <li class="list-inline-item"><span class="badge rounded-pill text-bg-primary">{{ tag }}</span></li>
+                <li class="list-inline-item">
+                    <a href="{{ tag.get_absolute_url }}" class="">
+                        <span class="badge rounded-pill text-bg-primary">{{ tag }}</span>
+                    </a>
+                </li>
                 {% endfor %}
             </ul>
             <a href="/" class="card-link">Geri Don</a>
