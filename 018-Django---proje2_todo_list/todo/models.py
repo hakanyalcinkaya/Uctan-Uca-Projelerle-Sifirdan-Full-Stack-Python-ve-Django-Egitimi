@@ -1,6 +1,8 @@
 from django.db import models
-from autoslug import AutoSlugField
+from django.contrib.auth.models import User
 from django.urls import reverse
+# Third Party Apps:
+from autoslug import AutoSlugField
 
 
 class Category(models.Model):
@@ -23,6 +25,8 @@ class Category(models.Model):
 class Todo(models.Model):
     # category = models.ForeignKey(Category, on_delete=models.CASCADE) # BUNU kullanmayacagim cunku CASCADE yapinca 
     # Category silinirse tum TODOlar silinir..
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    # user = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
     title = models.CharField(max_length=200)
     content = models.TextField(blank=True, null=True)
