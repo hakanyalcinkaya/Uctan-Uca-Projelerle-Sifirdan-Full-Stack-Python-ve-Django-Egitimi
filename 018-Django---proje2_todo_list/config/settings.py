@@ -151,7 +151,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # settings icerisindeki APP yapilari ayrildi
 
 # PATRON CILDIRDI :)
-# TODO: Todo'nun kategorisi olsun? (tek kategori ise foreign key )
+# DONE: Todo'nun kategorisi olsun? (tek kategori ise foreign key )
 # TODO: Kategori icindeki Tasklar Neler?
 # TODO: Todo ekleyen kisi kim? (foreign key)
 # TODO: Todo'ya tag ekleyelim, birden fazla tag eklenebilir olsun (ManyToMany)
