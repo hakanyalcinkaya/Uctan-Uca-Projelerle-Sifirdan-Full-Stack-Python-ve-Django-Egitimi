@@ -19,7 +19,7 @@
                     <ul class="dropdown-menu">
                         {% for category in global_categories %}
                         <li>
-                            <a class="dropdown-item" href="#">{{ category.title }}</a>
+                            <a class="dropdown-item" href="{% url 'category_view' category_slug=category.slug %}">{{ category.title }}</a>
                         </li>
                         {% endfor %}
                     </ul>

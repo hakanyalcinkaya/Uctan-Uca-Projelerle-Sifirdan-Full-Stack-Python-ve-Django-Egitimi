@@ -5,9 +5,12 @@
 
 <div class="col-sm-6 offset-sm-3">
     <h1 class="text-primary">TODO LIST ( {{todos.count}} )</h1>
+    {% if category %}
+    <h2>Kategori: {{ category }}</h2>
+    {% endif %}
     <div class="list-group">
         {% for todo in todos %}
-        <a href="{% url 'todo_detail' id=todo.pk %}" class="list-group-item list-group-item-action">{{ todo.title }}</a>
+        <a href="{% url 'todo_detail_view' id=todo.pk %}" class="list-group-item list-group-item-action">{{ todo.title }}</a>
         {% endfor %}
     </div>
 
