@@ -22,6 +22,9 @@ from page.views import home_view
 urlpatterns = [
     path('', home_view, name="home"),
 
+    # Pages:
+    path('page/', include('page.urls', namespace='page')),
+
     # Todo App:
     path('todo/', include('todo.urls', namespace='todo')),
 
