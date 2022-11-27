@@ -7,22 +7,22 @@ from django.shortcuts import render, get_object_or_404
 from .models import Todo, TodoCategory, TodoTag
 
 
-# @login_required(login_url='/admin/login/')
-# def home_view(request):
-#     # todos = Todo.objects.all()
-#     # todos = Todo.objects.filter(is_active=True)
-#     # todos = todos.filter(title__icontains="todo")
+@login_required(login_url='/admin/login/')
+def all_todos_view(request):
+    # todos = Todo.objects.all()
+    # todos = Todo.objects.filter(is_active=True)
+    # todos = todos.filter(title__icontains="todo")
 
-#     todos = Todo.objects.filter(
-#         user=request.user,
-#         is_active=True,
-#         # title__icontains="todo",
-#     )
+    todos = Todo.objects.filter(
+        user=request.user,
+        is_active=True,
+        # title__icontains="todo",
+    )
 
-#     context = dict(
-#         todos=todos
-#     )
-#     return render(request, 'todo/todo_list.html', context)
+    context = dict(
+        todos=todos
+    )
+    return render(request, 'todo/todo_list.html', context)
 
 
 # def todo_detail_view(request, id):

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
     <div class="container">
-        <a class="navbar-brand" href="/">Todo</a>
+        <a class="navbar-brand" href="/">DjangoMania</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -17,7 +17,7 @@
                         Kategoriler
                     </a>
                     <ul class="dropdown-menu">
-                        {% for category in global_categories %}
+                        {% for category in global_todo_categories %}
                         <li>
                             <a class="dropdown-item" href="{{ category.get_absolute_url }}">{{ category.title }}</a>
                             {% comment "get_absolute_url kullanilmadan onceki yapi" %}
