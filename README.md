@@ -2,7 +2,7 @@
 
 > Not: İçerikler oluşturulmaktadır. Index içerisindeki sıralama ve içerikler değişebilir
 
-İlerleme Durumu : ![80%](https://progress-bar.dev/80)
+İlerleme Durumu : ![85%](https://progress-bar.dev/85)
 > [İlerleme Durumunu Ayrıca Instagram Hesabımdan Paylaşıyorum ;) Instagram/hakanyalcinkayadev](https://bit.ly/hy-dev-instagram)
 
 - [x] HTML
@@ -17,6 +17,6 @@
 - [x] Python
 - [x] VirtualEnv ile Django Kurulumu 
 - [x] Django Proje 1
-- [ ] Django Proje 2
+- [x] Django Proje 2
 - [ ] Django Proje 3
 - [ ] Django Projelerinin Yayına Alınması
