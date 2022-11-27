@@ -24,8 +24,8 @@ def home_view(request):
     return render(request, "page/home_page.html", context)
 
 
-def page_view(request, slug):
-    result = list(filter(lambda x: (x['url'] == slug), FAKE_DB_PAGES)) 
+def page_view(request, page_slug):
+    result = list(filter(lambda x: (x['url'] == page_slug), FAKE_DB_PAGES)) 
    
     if result:
         context = dict(
