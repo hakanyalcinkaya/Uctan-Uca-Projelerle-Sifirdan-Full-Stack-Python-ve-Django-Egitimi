@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/">Todo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Ana Sayfa</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Kategoriler
+                    </a>
+                    <ul class="dropdown-menu">
+                        {% for category in global_categories %}
+                        <li>
+                            <a class="dropdown-item" href="{{ category.get_absolute_url }}">{{ category.title }}</a>
+                            {% comment "get_absolute_url kullanilmadan onceki yapi" %}
+                                <a class="dropdown-item" href="{% url 'category_view' category_slug=category.slug %}">{{ category.title }}</a>
+                            {% endcomment %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{% url 'logout_view' %}">Oturumu Kapat</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

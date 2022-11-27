@@ -1,0 +1,83 @@
+{% extends 'core/base.html' %}
+
+{% block container-fluid %}
+
+  {% include 'page/components/home_carousel.html' with CAROUSEL=FAKE_DB_CAROUSEL %}
+  <!-- ozellikle with kullanabilmek icin carousel icindeki FAKE_DB_CAROUSEL'i CAROUSEL olarak degistirdik.. -->
+
+  <div class="container-fluid mb-4">
+      <!-- Hero Content -->
+    <div class="row bg-dark p-4 border-bottom border-top">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2 class="text-center display-1">Django</h2>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis repellat in eum? Maxime veniam atque
+            beatae hic impedit quis architecto.
+          </p>
+        </div>
+      </div>
+    </div>
+      <!-- Hero Content END -->
+      <!-- About Us -->
+    <div class="row bg-dark text-light">
+      <div class="col-sm-6 ms-0 ps-0">
+        <img src="https://picsum.photos/id/249/600/250" alt="" class="w-100">
+      </div>
+      <div class="col-sm-6 d-flex justify-content-center align-items-center">
+        <div class="text-center">
+          <h2 class="display-2">Hakkimizda</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, hic.</p>
+          <p>Explicabo necessitatibus, aliquam animi minus numquam excepturi sed neque ipsa.</p>
+          <p>Quasi odit fuga recusandae! Nulla in adipisci fugit amet corporis!</p>
+        </div>
+      </div>
+    </div>
+    <!-- About Us END -->
+  </div>
+{% endblock container-fluid %}
+
+{% block container %}
+    <!-- Products -->
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>Urunlerimiz</h2>
+        <hr>
+      </div>
+      <div class="col-sm-4 mb-2">
+        <div class="card">
+          <img src="https://picsum.photos/id/149/400/250" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Urun 1</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Incele</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-4 mb-2">
+        <div class="card">
+          <img src="https://picsum.photos/id/49/400/250" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Urun 2</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Incele</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 mb-2">
+        <div class="card">
+          <img src="https://picsum.photos/id/50/400/250" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Urun 3</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Incele</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- Products END -->
+{% endblock container %}
