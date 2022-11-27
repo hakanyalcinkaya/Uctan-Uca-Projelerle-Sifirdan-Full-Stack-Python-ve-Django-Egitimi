@@ -6,6 +6,8 @@ from todo.views import (
     todo_detail_view,
 )
 
+app_name = 'todo'
+
 urlpatterns = [
     # All Todos:
     path('', all_todos_view, name='all_todos_view'),
