@@ -43,7 +43,7 @@ BASE_APPS = [
 ]
 
 THIRD_PARY_APPS = [
-
+    'tinymce',
 ]
 
 MY_APPS = [
