@@ -1,0 +1,2 @@
+# DjangoMania
+## Blog, Todo & Pages

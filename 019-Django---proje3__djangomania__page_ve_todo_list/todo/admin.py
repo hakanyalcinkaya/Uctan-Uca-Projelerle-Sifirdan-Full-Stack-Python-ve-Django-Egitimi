@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import Todo, Category, Tag
+from .models import Todo, TodoCategory, TodoTag
 
-class CategoryAdmin(admin.ModelAdmin):
+class TodoCategoryAdmin(admin.ModelAdmin):
     list_display = [
         'pk',
         'title',
@@ -26,5 +26,5 @@ class TodoAdmin(admin.ModelAdmin):
     ]
 
 admin.site.register(Todo, TodoAdmin)
-admin.site.register(Category, CategoryAdmin)
-admin.site.register(Tag)
+admin.site.register(TodoCategory, TodoCategoryAdmin)
+admin.site.register(TodoTag)
