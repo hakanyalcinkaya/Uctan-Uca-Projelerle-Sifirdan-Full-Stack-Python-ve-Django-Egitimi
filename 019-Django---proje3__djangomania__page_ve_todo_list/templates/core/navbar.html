@@ -27,9 +27,11 @@
                         {% endfor %}
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="{% url 'logout_view' %}">Oturumu Kapat</a>
-                </li>
+                {% if request.user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{% url 'logout_view' %}">Oturumu Kapat</a>
+                    </li>
+                {% endif %}
             </ul>
         </div>
     </div>
