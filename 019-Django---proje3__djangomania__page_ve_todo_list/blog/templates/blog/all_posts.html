@@ -4,6 +4,11 @@
 
 <div class="row">
     <div class="col-sm-9">
+        {% if category %}
+        <h1>{{ category.title }}</h1>
+        {% else %}
+        <h1>Tüm Blog Postları</h1>
+        {% endif%}
 
         {% for post in posts %}
         <div class="col mb-3">
@@ -29,7 +34,7 @@
         <h3>Kategoriler</h3>
         <div class="list-group">
             {% for category in categories %}
-            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+            <a href="{{ category.get_absolute_url }}" class="list-group-item list-group-item-action" aria-current="true">
                 {{ category.title }}
             </a>
             {% endfor %}

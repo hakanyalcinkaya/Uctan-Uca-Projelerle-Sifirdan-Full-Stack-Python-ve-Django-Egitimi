@@ -17,14 +17,13 @@ class BlogCategory(models.Model):
     def __str__(self):
         return self.title
 
-    # TODO: get_absolute_url
-    # def get_absolute_url(self):
-    #     return reverse(
-    #         'todo:category_view',
-    #         kwargs={
-    #             "category_slug": self.slug
-    #         }
-    #     )
+    def get_absolute_url(self):
+        return reverse(
+            'blog:category_view',
+            kwargs={
+                "category_slug": self.slug
+            }
+        )
 
 
 class BlogTag(models.Model):
