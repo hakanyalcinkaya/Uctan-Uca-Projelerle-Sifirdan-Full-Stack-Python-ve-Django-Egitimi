@@ -36,14 +36,13 @@ class BlogTag(models.Model):
     def __str__(self):
         return self.title
 
-    # TODO: get_absolute_url
-    # def get_absolute_url(self):
-    #     return reverse(
-    #         'todo:tag_view',
-    #         kwargs={
-    #             "tag_slug": self.slug
-    #         }
-    #     )
+    def get_absolute_url(self):
+        return reverse(
+            'blog:tag_view',
+            kwargs={
+                "tag_slug": self.slug
+            }
+        )
 
 
 class Post(models.Model):

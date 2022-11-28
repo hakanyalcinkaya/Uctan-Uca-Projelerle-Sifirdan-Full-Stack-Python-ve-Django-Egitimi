@@ -6,6 +6,8 @@
     <div class="col-sm-9">
         {% if category %}
         <h1>{{ category.title }}</h1>
+        {% elif tag %}
+        <h1>{{ tag.title|title }}</h1>
         {% else %}
         <h1>Tüm Blog Postları</h1>
         {% endif%}
@@ -21,6 +23,15 @@
                         <div class="col-sm">
                             <h5 class="card-title">{{ post.title }}</h5>
                             <p class="card-text">{{ todo.content }}</p>
+                            <ul class="list-inline">
+                                {% for tag in post.tag.all %}
+                                <li class="list-inline-item">
+                                    <a href="{{ tag.get_absolute_url }}" class="">
+                                        <span class="badge text-bg-primary">{{ tag.title }}</span>
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
                             <a href="#" class="card-link">Incele</a>
                         </div>
                     </div>
@@ -34,7 +45,8 @@
         <h3>Kategoriler</h3>
         <div class="list-group">
             {% for category in categories %}
-            <a href="{{ category.get_absolute_url }}" class="list-group-item list-group-item-action" aria-current="true">
+            <a href="{{ category.get_absolute_url }}" class="list-group-item list-group-item-action"
+                aria-current="true">
                 {{ category.title }}
             </a>
             {% endfor %}
@@ -45,7 +57,9 @@
 
             {% for tag in tags %}
             <li class="list-inline-item">
-                <span class="badge text-bg-primary">{{ tag.title }}</span>
+                <a href="{{ tag.get_absolute_url }}" class="">
+                    <span class="badge text-bg-primary">{{ tag.title }}</span>
+                </a>
             </li>
             {% endfor %}
         </ul>
