@@ -27,6 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
+    # Local IPnin Eklenmesi:
+    # '192.168.1.102',
+
+    # Domain Name Eklenmesi:
+    # 'djangomania.com',
 ]
 
 
