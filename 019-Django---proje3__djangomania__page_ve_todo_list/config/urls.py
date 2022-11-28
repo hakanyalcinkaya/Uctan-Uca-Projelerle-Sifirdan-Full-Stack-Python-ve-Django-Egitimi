@@ -32,6 +32,9 @@ urlpatterns = [
     # Todo App:
     path('todo/', include('todo.urls', namespace='todo')),
 
+    # Blog App:
+    path('blog/', include('blog.urls', namespace='blog')),
+
     # Auth:
     path('account/logout/', logout_view, name="logout_view"),
 
