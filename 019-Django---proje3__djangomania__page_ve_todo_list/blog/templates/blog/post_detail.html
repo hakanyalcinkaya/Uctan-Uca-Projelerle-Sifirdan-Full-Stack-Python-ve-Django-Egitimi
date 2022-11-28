@@ -1,0 +1,61 @@
+{% extends 'core/base.html' %}
+
+{% block container %}
+
+<div class="row">
+    <div class="col-sm-9">
+
+        <h1>
+            {{ post.title}} 
+            <small class="text-muted">
+                {{ post.category.title }}
+            </small>
+        </h1>
+
+
+        <div class="col mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <img src="{{ post.cover_image.url }}" alt="" class="w-100 img-thubnail">
+                    <h5 class="card-title mt-3">{{ post.title }}</h5>
+                    <p class="card-text">{{ post.content|safe }}</p>
+                    <ul class="list-inline">
+                        {% for tag in post.tag.all %}
+                        <li class="list-inline-item">
+                            <a href="{{ tag.get_absolute_url }}" class="">
+                                <span class="badge text-bg-primary">{{ tag.title }}</span>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-sm-3">
+        <h3>Kategoriler</h3>
+        <div class="list-group">
+            {% for category in categories %}
+            <a href="{{ category.get_absolute_url }}" class="list-group-item list-group-item-action"
+                aria-current="true">
+                {{ category.title }}
+            </a>
+            {% endfor %}
+        </div>
+
+        <h3 class="mt-4">Etiketler</h3>
+        <ul class="list-inline">
+
+            {% for tag in tags %}
+            <li class="list-inline-item">
+                <a href="{{ tag.get_absolute_url }}" class="">
+                    <span class="badge text-bg-primary">{{ tag.title }}</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock container %}

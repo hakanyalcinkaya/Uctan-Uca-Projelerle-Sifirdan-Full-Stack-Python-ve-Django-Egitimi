@@ -22,7 +22,7 @@
                         </div>
                         <div class="col-sm">
                             <h5 class="card-title">{{ post.title }}</h5>
-                            <p class="card-text">{{ todo.content }}</p>
+                            <p class="card-text">{{ post.content|safe|truncatewords_html:10 }}</p>
                             <ul class="list-inline">
                                 {% for tag in post.tag.all %}
                                 <li class="list-inline-item">
@@ -32,7 +32,7 @@
                                 </li>
                                 {% endfor %}
                             </ul>
-                            <a href="#" class="card-link">Incele</a>
+                            <a href="{{ post.get_absolute_url }}" class="card-link">Incele</a>
                         </div>
                     </div>
                 </div>

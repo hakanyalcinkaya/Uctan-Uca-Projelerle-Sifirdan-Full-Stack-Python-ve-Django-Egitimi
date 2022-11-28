@@ -65,12 +65,11 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-    # TODO: get_absolute_url
-    # def get_absolute_url(self):
-    #     return reverse(
-    #         'todo:todo_detail_view',
-    #         kwargs={
-    #             "category_slug": self.category.slug,
-    #             "id": self.pk,
-    #         }
-    #     )
+    def get_absolute_url(self):
+        return reverse(
+            'blog:post_detail_view',
+            kwargs={
+                "category_slug": self.category.slug,
+                "post_slug": self.slug,
+            }
+        )
