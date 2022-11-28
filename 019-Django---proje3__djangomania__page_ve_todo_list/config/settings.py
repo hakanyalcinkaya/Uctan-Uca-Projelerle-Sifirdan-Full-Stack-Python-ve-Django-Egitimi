@@ -52,8 +52,9 @@ THIRD_PARY_APPS = [
 ]
 
 MY_APPS = [
-    'todo',
+    'blog',
     'page',
+    'todo',
 ]
 
 INSTALLED_APPS = BASE_APPS + THIRD_PARY_APPS + MY_APPS
