@@ -40,6 +40,36 @@
         </div>
         {% endfor %}
 
+
+        {% if posts.paginator %}
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+
+                {% if posts.has_previous %}
+                <li class="page-item"><a class="page-link" href="?page=1">First</a></li>
+                <li class="page-item"><a class="page-link" href="?page={{ posts.previous_page_number }}">Previous</a></li>
+                {% endif %}
+
+                {% with ''|center:posts.paginator.num_pages as range %}
+                {% for _ in range %}
+                <li class="page-item"><a class="page-link" href="?page={{ forloop.counter }}">{{ forloop.counter }}</a>
+                </li>
+                {% endfor %}
+                {% endwith %}
+
+
+
+                {% if posts.has_next %}
+                    <li class="page-item"><a class="page-link" href="?page={{ posts.next_page_number }}">Next</a></li>
+                    <li class="page-item"><a class="page-link" href="?page={{ posts.paginator.num_pages }}">Last</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+
+        {% endif %}
+
+
     </div>
     <div class="col-sm-3">
         <h3>Kategoriler</h3>

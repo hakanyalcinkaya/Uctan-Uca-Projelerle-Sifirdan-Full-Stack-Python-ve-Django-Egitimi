@@ -1,3 +1,4 @@
+from django.core.paginator import Paginator
 from django.shortcuts import render, get_object_or_404
 from .models import BlogCategory, BlogTag, Post
 
@@ -5,7 +6,12 @@ from .models import BlogCategory, BlogTag, Post
 def all_post_view(request):
     categories = BlogCategory.objects.filter(is_active=True).order_by('title')
     tags = BlogTag.objects.filter(is_active=True).order_by('title')
-    posts = Post.objects.filter(is_active=True).order_by('-created_at')
+    all_posts = Post.objects.filter(is_active=True).order_by('-created_at')
+
+    paginator = Paginator(all_posts, 5)
+
+    page_number = request.GET.get('page')
+    posts = paginator.get_page(page_number)
 
     context = dict(
         categories=categories,
@@ -19,10 +25,15 @@ def category_view(request, category_slug):
     category = get_object_or_404(BlogCategory, slug=category_slug)
     categories = BlogCategory.objects.filter(is_active=True).order_by('title')
     tags = BlogTag.objects.filter(is_active=True).order_by('title')
-    posts = Post.objects.filter(
+    all_posts = Post.objects.filter(
         category=category,
         is_active=True,
     ).order_by('-created_at')
+
+    paginator = Paginator(all_posts, 5)
+
+    page_number = request.GET.get('page')
+    posts = paginator.get_page(page_number)
 
     context = dict(
         category=category,
