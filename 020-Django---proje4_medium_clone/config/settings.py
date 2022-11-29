@@ -40,6 +40,7 @@ BASE_APPS = [
 ]
 
 THIRD_PARY_APPS = [
+    'tinymce',
     'crispy_forms',
     'crispy_bootstrap5',
 ]
