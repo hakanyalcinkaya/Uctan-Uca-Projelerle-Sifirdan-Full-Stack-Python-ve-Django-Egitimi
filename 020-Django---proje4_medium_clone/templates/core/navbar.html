@@ -15,8 +15,21 @@
                     Membership
                 </a>
                 <a class="nav-link" href="#">Write</a>
-                <a class="nav-link" href="#">Sign In</a>
-                <a class="nav-link btn btn-dark text-light px-3 rounded-pill ms-3">Get Started</a>
+                {% if not request.user.is_authenticated %}
+                <a class="nav-link" href="{% url 'user_profile:login_view' %}">
+                    Sign In
+                </a>
+                <a class="nav-link btn btn-dark text-light px-3 rounded-pill ms-3"
+                    href="{% url 'user_profile:register_view' %}">
+                    Get Started
+                </a>
+                {% else %}
+                <a class="nav-link" href="#">{{ request.user.username }}</a>
+                <a class="nav-link btn btn-dark text-light px-3 rounded-pill ms-3"
+                    href="{% url 'user_profile:logout_view' %}">
+                    Logout
+                </a>
+                {% endif %}
             </div>
         </div>
     </div>
