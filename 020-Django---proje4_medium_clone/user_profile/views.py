@@ -34,5 +34,15 @@ def logout_view(request):
 def register_view(request):
     context = dict()
     if request.method == "POST":
-        print(request.POST)
+        post_info = request.POST
+        email = post_info.get('email')
+        email_confirm = post_info.get('email_confirm')
+        first_name = post_info.get('first_name')
+        last_name = post_info.get('last_name')
+        password = post_info.get('password')
+        password_confirm = post_info.get('password_confirm')
+        instagram = post_info.get('instagram')
+        print('*' * 30)
+        print(email, email_confirm, password, password_confirm, first_name, last_name, instagram)
+        print('*' * 30)
     return render(request, 'user_profile/register.html', context)
