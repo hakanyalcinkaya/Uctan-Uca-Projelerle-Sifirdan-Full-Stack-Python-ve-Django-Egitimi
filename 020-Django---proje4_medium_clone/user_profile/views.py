@@ -1,6 +1,7 @@
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render, redirect
+from django.contrib.auth.models import User
 
 
 def login_view(request):
@@ -42,9 +43,8 @@ def register_view(request):
         password = post_info.get('password')
         password_confirm = post_info.get('password_confirm')
         instagram = post_info.get('instagram')
-        print('*' * 30)
-        print(email, email_confirm, password, password_confirm, first_name, last_name, instagram)
-        if len(first_name) < 3 or len(last_name) < 3 or len(email) < 3 or len(password): 
+        
+        if len(first_name) < 3 or len(last_name) < 3 or len(email) < 3 or len(password) < 3: 
             messages.warning(request, "Bilgiler en az 3 karakterden olusmali..")
             return redirect('user_profile:register_view')
 
@@ -55,5 +55,17 @@ def register_view(request):
         if password != password_confirm:
             messages.warning(request, "Lutfen Sifre Bilgisini Dogru Giriniz..")
             return redirect('user_profile:register_view')
+        
+        user, created = User.objects.get_or_create(username=email)
+        # Eger Kullanici Created Degilse Kullanici Daha Once Sisteme Kayitlidir..
+        if not created:
+            user = authenticate(request, username=email, password=password)
+            if user is not None:
+                messages.success(request, "Daha Once Kayit Olmussunuz.. Ana Sayfaya Yonlendirildiniz..")
+                # Kullanici Login oldu ;)
+                login(request, user)
+                return redirect('home_view')
+            messages.warning(request, f'{email} adresi sistemde kayitli ama Login olamadiniz.. Login Sayfasina Yonlendiriliyorsunuz')
+            return redirect('user_profile:login_view')
 
     return render(request, 'user_profile/register.html', context)
