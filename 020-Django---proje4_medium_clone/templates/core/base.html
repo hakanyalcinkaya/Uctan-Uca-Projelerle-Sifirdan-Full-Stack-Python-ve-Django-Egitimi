@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    {% include 'core/navbar.html' %}
 
+    {% include 'core/messages.html' %}
+    {% include 'core/navbar.html' %}
+    
     <!-- HERO -->
     <div class="bg-warning border-bottom border-dark">
         <div class="container py-5">
@@ -407,5 +409,4 @@
 
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 </body>
-
 </html>
