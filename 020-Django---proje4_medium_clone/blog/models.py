@@ -44,7 +44,7 @@ class Tag(CommonModel):
     #     )
 
 
-class Post(CommonModel):
+class BlogPost(CommonModel):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
     tag = models.ManyToManyField(Tag)

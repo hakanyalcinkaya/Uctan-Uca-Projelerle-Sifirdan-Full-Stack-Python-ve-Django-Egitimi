@@ -1,12 +1,12 @@
 from django import forms
-from .models import Post
+from .models import BlogPost
 
 
-class PostModelForm(forms.ModelForm):
+class BlogPostModelForm(forms.ModelForm):
     tag = forms.CharField()
 
     class Meta:
-        model = Post
+        model = BlogPost
         fields = [
             'title',
             'cover_image',
@@ -14,7 +14,5 @@ class PostModelForm(forms.ModelForm):
             'category',
             'tag',
         ]
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.fields['title'].widget.attrs.update({'class': 'form-control'})
-        self.fields['category'].widget.attrs.update({'class':'form-control'})
+    
+    
