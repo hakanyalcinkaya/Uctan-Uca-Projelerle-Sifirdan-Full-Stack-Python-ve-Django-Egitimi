@@ -10,6 +10,9 @@ from page.views import home_view
 urlpatterns = [
     path('', home_view, name='home_view'),
 
+    # BLOG:
+    path('blog/', include('blog.urls', namespace='blog')),
+
     # USER:
     path('user/', include('user_profile.urls', namespace='user')),
 
