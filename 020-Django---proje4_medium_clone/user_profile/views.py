@@ -1,5 +1,5 @@
 from django.contrib import messages
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render, redirect
 
 
@@ -22,3 +22,9 @@ def login_view(request):
             messages.success(request, f'{request.user.username } Login Oldun')
             return redirect('home_view')
     return render(request, 'user_profile/login.html', context)
+
+
+def logout_view(request):
+    messages.info(request, f'{request.user.username } Oturumun Kapatildi')
+    logout(request)
+    return redirect('home_view')
