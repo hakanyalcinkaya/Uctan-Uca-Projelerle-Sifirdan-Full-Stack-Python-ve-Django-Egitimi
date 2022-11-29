@@ -44,5 +44,16 @@ def register_view(request):
         instagram = post_info.get('instagram')
         print('*' * 30)
         print(email, email_confirm, password, password_confirm, first_name, last_name, instagram)
-        print('*' * 30)
+        if len(first_name) < 3 or len(last_name) < 3 or len(email) < 3 or len(password): 
+            messages.warning(request, "Bilgiler en az 3 karakterden olusmali..")
+            return redirect('user_profile:register_view')
+
+        if email != email_confirm:
+            messages.warning(request, "Lutfen Email Bilgisini Dogru Giriniz..")
+            return redirect('user_profile:register_view')
+
+        if password != password_confirm:
+            messages.warning(request, "Lutfen Sifre Bilgisini Dogru Giriniz..")
+            return redirect('user_profile:register_view')
+
     return render(request, 'user_profile/register.html', context)
