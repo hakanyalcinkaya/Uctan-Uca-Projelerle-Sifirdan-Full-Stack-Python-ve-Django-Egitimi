@@ -3,6 +3,10 @@
 {% block content %}
 <div class="container">
     <div class="row">
+
+        <div class="col-sm-8 offset-sm-2 mt-5 bg-light border p-5">
+            instagram: {{ profile.instagram }}
+        </div>
         <div class="col-sm-8 offset-sm-2 mt-5">
             {% for post in posts %}
                 {% include 'blog/components/post.html' %}
