@@ -7,7 +7,7 @@
 <div class="container mt-4">
     <div class="row">
         <div class="col-sm-8 offset-sm-2">
-            <h2>Yeni Blog Post:</h2>
+            <h2>{{ title }}</h2>
             <form method="post" enctype='multipart/form-data'>
                 {% csrf_token %}
                 {{ form|crispy }}

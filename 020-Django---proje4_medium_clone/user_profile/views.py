@@ -1,11 +1,25 @@
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.models import User
 
 from slugify import slugify
 
 from .models import Profile
+from .forms import ProfileModelForm
+
+
+@login_required(login_url='user:login_view')
+def profile_edit_view(request):
+    user = request.user
+    form = ProfileModelForm(instance=user.profile)
+    title = "Profili Duzenle :"
+    context = dict(
+        form=form,
+        title=title,
+    )
+    return render(request, 'blog/form.html', context)
 
 
 def login_view(request):
