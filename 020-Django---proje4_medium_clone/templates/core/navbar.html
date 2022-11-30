@@ -7,31 +7,56 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
-                <a class="nav-link" aria-current="page" href="#">
-                    Our story
-                </a>
-                <a class="nav-link" href="#">
-                    Membership
-                </a>
-                
-                <a class="nav-link" href="{% url 'blog:create_blog_post_view' %}">Write</a>
+
+            <ul class="navbar-nav  ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our story</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Membership</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'blog:create_blog_post_view' %}">Write</a>
+                </li>
+
                 {% if not request.user.is_authenticated %}
-                <a class="nav-link" href="{% url 'user_profile:login_view' %}">
-                    Sign In
-                </a>
-                <a class="nav-link btn btn-dark text-light px-3 rounded-pill ms-3"
-                    href="{% url 'user_profile:register_view' %}">
-                    Get Started
-                </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'user_profile:login_view' %}">
+                        Sign In
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-dark text-light px-3 rounded-pill ms-3"
+                        href="{% url 'user_profile:register_view' %}">
+                        Get Started
+                    </a>
+                </li>
                 {% else %}
-                <a class="nav-link" href="#">{{ request.user.username }}</a>
-                <a class="nav-link btn btn-dark text-light px-3 rounded-pill ms-3"
-                    href="{% url 'user_profile:logout_view' %}">
-                    Logout
-                </a>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        {{ request.user.username }}
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{{ request.user.profile.get_all_posts_url }}">Show My All Posts</a></li>
+                        <li><a class="dropdown-item" href="{{ request.user.profile.get_profile_edit_url }}">Edit Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Favs</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link btn btn-dark text-light px-3 rounded-pill ms-3"
+                        href="{% url 'user_profile:logout_view' %}">
+                        Logout
+                    </a>
+                </li>
                 {% endif %}
-            </div>
+
+
+                
+            </ul>
+
         </div>
     </div>
 </nav>

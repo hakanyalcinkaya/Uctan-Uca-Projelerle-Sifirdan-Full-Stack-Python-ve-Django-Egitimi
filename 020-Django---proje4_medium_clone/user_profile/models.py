@@ -11,10 +11,15 @@ class Profile(models.Model):
     slug = models.SlugField(max_length=200)
     info = tinymce_models.HTMLField(blank=True, null=True)
 
-    def get_absolute_url(self):
+    def get_all_posts_url(self):
         return reverse(
             'read:all_posts_view',
             kwargs={
                 "user_slug": self.slug,
             }
+        )
+
+    def get_profile_edit_url(self):
+        return reverse(
+            'user:profile_edit_view'
         )
