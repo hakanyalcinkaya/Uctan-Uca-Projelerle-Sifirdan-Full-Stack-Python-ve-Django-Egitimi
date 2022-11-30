@@ -43,6 +43,7 @@ THIRD_PARY_APPS = [
     'tinymce',
     'crispy_forms',
     'crispy_bootstrap5',
+    'django_extensions',
 ]
 
 MY_APPS = [
