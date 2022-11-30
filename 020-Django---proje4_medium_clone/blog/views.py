@@ -11,9 +11,10 @@ def create_blog_post_view(request):
     if request.method == 'POST':
         form = BlogPostModelForm(request.POST or None, request.FILES or None)
         if form.is_valid():
-            print("Valid Oldu..")
             f = form.save(commit=False)
+            print(form.cleaned_data)
             f.user = request.user
+            # print(form.cleaned_data.get('tag'))
             # f.save()
     
     context = dict(

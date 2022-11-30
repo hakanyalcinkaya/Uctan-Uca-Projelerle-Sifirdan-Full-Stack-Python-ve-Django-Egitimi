@@ -1,7 +1,9 @@
 {% extends 'core/base.html' %}
+{% load static %}
 {% load crispy_forms_tags %}
 
 {% block content %}
+<link rel="stylesheet" href="{% static 'css/tagify.css' %}">
 <div class="container mt-4">
     <div class="row">
         <div class="col-sm-8 offset-sm-2">
@@ -15,4 +17,12 @@
         </div>
     </div>
 </div>
+
+<script src="{% static 'js/tagify.js' %}"></script>
+<script src="{% static 'js/tagify.polyfills.min.js' %}"></script>
+
+<script>
+    var input = document.querySelector('input[name=tag]');
+    new Tagify(input)
+</script>
 {% endblock content %}
