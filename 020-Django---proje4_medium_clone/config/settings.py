@@ -50,6 +50,7 @@ THIRD_PARY_APPS = [
 MY_APPS = [
     'blog',
     'page',
+    'read',
     'user_profile',
 ]
 

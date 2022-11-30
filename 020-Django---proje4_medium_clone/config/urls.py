@@ -13,6 +13,10 @@ urlpatterns = [
     # BLOG:
     path('blog/', include('blog.urls', namespace='blog')),
 
+    # READ:
+    path('read/', include('read.urls', namespace='read')),
+
+
     # USER:
     path('user/', include('user_profile.urls', namespace='user')),
 
