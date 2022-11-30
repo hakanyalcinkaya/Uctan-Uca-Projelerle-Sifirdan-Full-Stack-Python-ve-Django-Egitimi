@@ -12,12 +12,9 @@ def create_blog_post_view(request):
     )
     if request.method == 'POST':
         form = BlogPostModelForm(request.POST or None, request.FILES or None)
-        print(form)
-        print(form.errors)
         if form.is_valid():
             f = form.save(commit=False)
             f.user = request.user
             f.save()
-            print(form.cleaned_data)
         
     return render(request, 'blog/create_blog_post.html', context)
