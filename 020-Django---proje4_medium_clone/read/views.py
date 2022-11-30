@@ -14,6 +14,8 @@ def all_posts_view(request, user_slug):
 
 def post_detail_view(request, user_slug, post_slug):
     post = get_object_or_404(BlogPost, slug=post_slug, is_active=True)
+    post.view_count += 1
+    post.save()
     context = dict(
         post=post,
     )

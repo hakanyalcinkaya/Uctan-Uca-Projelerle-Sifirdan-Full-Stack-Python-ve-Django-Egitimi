@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-8 offset-sm-2 mt-5 bg-light border p-5">
+            {% if category %}
+            <h1>{{ category.title }}</h1>
+            {% elif tag %}
+            <h1>{{ tag.title }}</h1>
+            {% endif %}
+
+        </div>
+        <div class="col-sm-8 offset-sm-2 mt-5">
+            {% if category %}
+                {% with posts=category.blogpost_set.all %}
+                    {% for post in posts %}
+                        {% include 'blog/components/post.html' %}
+                    {% endfor %}
+                {% endwith%}
+            {% elif tag %}
+                {% with posts=tag.blogpost_set.all %}
+                    {% for post in posts %}
+                        {% include 'blog/components/post.html' %}
+                    {% endfor %}
+                {% endwith%}
+            {% endif%}
+        </div>
+    </div>
+</div>
+{% endblock content %}
