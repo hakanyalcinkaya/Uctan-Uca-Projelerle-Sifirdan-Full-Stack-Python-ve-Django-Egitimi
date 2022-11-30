@@ -41,7 +41,7 @@
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="{{ request.user.profile.get_all_posts_url }}">Show My All Posts</a></li>
                         <li><a class="dropdown-item" href="{{ request.user.profile.get_profile_edit_url }}">Edit Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Favs</a></li>
+                        <li><a class="dropdown-item" href="{{ request.user.profile.get_fav_url }}">Favs</a></li>
                     </ul>
                 </li>
 

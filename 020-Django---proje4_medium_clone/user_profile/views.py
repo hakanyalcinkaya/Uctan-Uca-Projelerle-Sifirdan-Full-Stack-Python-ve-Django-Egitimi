@@ -8,6 +8,18 @@ from slugify import slugify
 
 from .models import Profile
 from .forms import ProfileModelForm
+from blog.models import BlogPost
+
+
+@login_required(login_url='user:login_view')
+def user_fav_view(request):
+    ids = request.user.userpostfav_set.filter(is_deleted=False).values_list('post_id', flat=True).order_by('-updated_at')
+    context = dict(
+        title="Favorilerim",
+        favs=BlogPost.objects.filter(id__in=ids, is_active=True)
+    )
+    return render(request, 'blog/post_list.html', context)
+
 
 
 @login_required(login_url='user:login_view')
