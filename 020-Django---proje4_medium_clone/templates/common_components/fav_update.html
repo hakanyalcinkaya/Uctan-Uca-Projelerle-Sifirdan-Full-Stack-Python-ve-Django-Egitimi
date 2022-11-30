@@ -1,0 +1,18 @@
+{% load static %}
+<script src="{% static 'js/axios.min.js' %}"></script>
+<script>
+    const items = document.querySelectorAll("[data-post-slug]");
+
+    items.forEach(item => item.addEventListener('click', event => {
+        const slug = event.target.getAttribute('data-post-slug');
+        console.log(slug)
+
+        if (slug) {
+            let form = new FormData()
+            form.append('slug', slug)
+            form.append('csrfmiddlewaretoken', '{{ csrf_token }}')
+
+            axios.post('/blog/fav-update/', form).then(res => console.log(res)).catch(err => console.error(err))
+        }
+    }))
+</script>
