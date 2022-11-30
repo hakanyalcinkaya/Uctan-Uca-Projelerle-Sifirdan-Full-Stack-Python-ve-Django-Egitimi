@@ -1,5 +1,15 @@
 from django.contrib import admin
-from .models import Category, Tag, BlogPost
+from .models import Category, Tag, BlogPost, UserPostFav
+
+
+@admin.register(UserPostFav)
+class UserPostFavAdmin(admin.ModelAdmin):
+    list_display = [
+        'pk',
+        'user', 
+        'post',
+        'is_deleted',
+    ]
 
 
 @admin.register(Category)

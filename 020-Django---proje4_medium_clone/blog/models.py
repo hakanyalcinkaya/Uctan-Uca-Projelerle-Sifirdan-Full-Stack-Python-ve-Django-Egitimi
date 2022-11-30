@@ -67,3 +67,11 @@ class BlogPost(CommonModel):
                 "post_slug": self.slug,
             }
         )
+
+
+class UserPostFav(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    post = models.ForeignKey(BlogPost, on_delete=models.CASCADE)
+    is_deleted = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
