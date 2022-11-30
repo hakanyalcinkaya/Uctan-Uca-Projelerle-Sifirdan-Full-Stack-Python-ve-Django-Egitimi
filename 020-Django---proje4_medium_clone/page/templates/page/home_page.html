@@ -230,38 +230,10 @@
 <section class="container mt-5">
     <div class="row">
         <main class="col-sm-7">
-            <article class="row mb-3">
-                <div class="col-sm-8">
-                    <div>
-                        <a href="#" class="text-decoration-none text-muted">
-                            <img src="https://picsum.photos/id/212/30/30?grayscale" class="rounded-circle" alt="">
-                            <small class="ms-2">Lorem, ipsum dolor.</small>
-                        </a>
-                    </div>
-                    <h3 class="mt-2">Lorem ipsum dolor sit amet.</h3>
-                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                    <ul class="list-inline">
-                        <li class="list-inline-item fs-12">Sep 30</li>
-                        <li class="list-inline-item fs-12">6 min read</li>
-                        <li class="list-inline-item fs-12">
-                            <span class="badge bg-secondary">History</span>
-                        </li>
-                        <li class="list-inline-item fs-12 float-end">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-bookmark-plus" viewBox="0 0 16 16">
-                                <path
-                                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-                                <path
-                                    d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z" />
-                            </svg>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-4">
-                    <img src="https://picsum.photos/id/220/400/300?grayscale" alt="" class="w-100 img-thumbnail">
-                </div>
-
-            </article>
+            {% for post in posts %}
+                {% include 'blog/components/post.html' %}
+            {% endfor %}
+            
 
             <article class="row mb-3">
                 <div class="col-sm-8">

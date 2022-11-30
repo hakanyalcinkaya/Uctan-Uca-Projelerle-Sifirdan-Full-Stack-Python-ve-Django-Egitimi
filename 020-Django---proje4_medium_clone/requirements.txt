@@ -9,6 +9,7 @@ django-autoslug==1.9.8
 django-crispy-forms==1.14.0
 django-extensions==3.2.1
 django-tinymce==3.5.0
+easy-thumbnails==2.8.3
 executing==1.2.0
 ipython==8.7.0
 jedi==0.18.2

@@ -44,6 +44,7 @@ THIRD_PARY_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
     'django_extensions',
+    'easy_thumbnails',
 ]
 
 MY_APPS = [
@@ -165,3 +166,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # CRISPY:
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
+
+THUMBNAIL_ALIASES = {
+    '': {
+        'avatar': {'size': (30, 30), 'crop': True},
+        'avatar2x': {'size': (60, 60), 'crop': True},
+        'thumbnail': {'size': (400, 300), 'crop': True},
+        'page': {'size': (800, 450), 'crop': True},
+    },
+}

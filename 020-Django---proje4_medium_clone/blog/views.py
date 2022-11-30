@@ -21,7 +21,7 @@ def create_blog_post_view(request):
             f.save()
             tags = json.loads(form.cleaned_data.get('tag'))
             for item in tags:
-                tag_item, created = Tag.objects.get_or_create(title=item.get('value'))
+                tag_item, created = Tag.objects.get_or_create(title=item.get('value').lower())
                 f.tag.add(tag_item)
             messages.success(request, "Blog Postunuz Basariyla Kaydedildi..")
             return redirect('home_view')
