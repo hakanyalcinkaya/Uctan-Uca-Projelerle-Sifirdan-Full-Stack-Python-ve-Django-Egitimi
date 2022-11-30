@@ -3,7 +3,7 @@
     <div class="col-sm-8">
         <div>
             <a href="{{ post.user.profile.get_absolute_url }}" class="text-decoration-none text-muted">
-                <img src="https://picsum.photos/id/212/30/30?grayscale" class="rounded-circle" alt="">
+                <img src="{{ post.user.profile.avatar|thumbnail_url:'avatar'}}" class="rounded-circle" alt="">
                 <small class="ms-2">{{ post.user.get_full_name }}</small>
             </a>
         </div>
