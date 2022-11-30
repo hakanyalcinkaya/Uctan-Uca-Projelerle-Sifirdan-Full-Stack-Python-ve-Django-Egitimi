@@ -59,11 +59,11 @@ class BlogPost(CommonModel):
     class Meta:
         ordering = ('-created_at',)
 
-    # def get_absolute_url(self):
-    #     return reverse(
-    #         'blog:post_detail_view',
-    #         kwargs={
-    #             "category_slug": self.category.slug,
-    #             "post_slug": self.slug,
-    #         }
-    #     )
+    def get_absolute_url(self):
+        return reverse(
+            'read:post_detail_view',
+            kwargs={
+                "user_slug": self.user.profile.slug,
+                "post_slug": self.slug,
+            }
+        )

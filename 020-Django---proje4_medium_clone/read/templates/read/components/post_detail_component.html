@@ -1,20 +1,23 @@
 {% load thumbnail %}
 <article class="row mb-3">
-    <div class="col-sm-8">
+    <div class="col-sm-12">
+        <img src="{{ post.cover_image|thumbnail_url:'page' }}" alt="" class="w-100 img-thumbnail">
+    </div>
+    <div class="col-sm-8 offset-sm-2">
+        
+        <h3 class="mt-2 mb-1">{{ post.title }}</h3>
+        
+        {{ post.content|safe }}
+
+        <hr>
         <div>
             <a href="{{ post.user.profile.get_absolute_url }}" class="text-decoration-none text-muted">
                 <img src="https://picsum.photos/id/212/30/30?grayscale" class="rounded-circle" alt="">
                 <small class="ms-2">{{ post.user.get_full_name }}</small>
             </a>
         </div>
-        <h3 class="mt-2 mb-1">
-            <a href="{{ post.get_absolute_url }}" class="text-dark">
-                {{ post.title }}
-            </a>
-        </h3>
-        <span class="text-muted">
-            {{ post.content|safe|truncatewords_html:10 }}
-        </span>
+        <hr>
+
         <ul class="list-inline">
             <li class="list-inline-item fs-12">Sep 30</li>
             <li class="list-inline-item fs-12">6 min read</li>
@@ -34,8 +37,6 @@
             </li>
         </ul>
     </div>
-    <div class="col-sm-4">
-        <img src="{{ post.cover_image|thumbnail_url:'thumbnail' }}" alt="" class="w-100 img-thumbnail">
-    </div>
+   
 
 </article>
