@@ -5,7 +5,18 @@
     </div>
     <div class="col-sm-8 offset-sm-2">
         
-        <h3 class="mt-2 mb-1">{{ post.title }}</h3>
+        <h3 class="mt-2 mb-1">
+            {{ post.title }}
+
+            {% if post.user == request.user %}
+            <small>
+                <a href="{{ post.get_post_edit_url }}">
+                    Duzenle
+                </a>
+            </small>
+            {% endif%}
+
+        </h3>
         
         {{ post.content|safe }}
 
