@@ -2,7 +2,7 @@
 
 > Not: İçerikler oluşturulmaktadır. Index içerisindeki sıralama ve içerikler değişebilir
 
-İlerleme Durumu : ![90%](https://progress-bar.dev/90)
+İlerleme Durumu : ![99%](https://progress-bar.dev/99)
 > [İlerleme Durumunu Ayrıca Instagram Hesabımdan Paylaşıyorum ;) Instagram/hakanyalcinkayadev](https://bit.ly/hy-dev-instagram)
 
 - [x] HTML
@@ -19,5 +19,5 @@
 - [x] Django Proje 1
 - [x] Django Proje 2
 - [x] Django Proje 3
-- [ ] Django Proje 4
+- [x] Django Proje 4
 - [ ] Django Projelerinin Yayına Alınması
