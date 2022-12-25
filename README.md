@@ -1,4 +1,5 @@
 # Udemy: Uçtan Uca Projelerle Sıfırdan Full Stack Python ve Django Eğitimi
+[Eğitimi İncelemek İçin Linke Tıklayabilirsiniz.](http://lnk.ktlzr.co/gtrpdj)
 
 > Not: İçerikler oluşturulmaktadır. Index içerisindeki sıralama ve içerikler değişebilir
 
