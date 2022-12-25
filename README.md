@@ -1,3 +1,4 @@
+![Udemy: Uçtan Uca Projelerle Sıfırdan Full Stack Python ve Django Eğitimi](https://github.com/hakanyalcinkaya/hakanyalcinkaya/raw/main/assets/img/udemy_python_django_v4.jpg)
 # Udemy: Uçtan Uca Projelerle Sıfırdan Full Stack Python ve Django Eğitimi
 [Eğitimi İncelemek İçin Linke Tıklayabilirsiniz.](http://lnk.ktlzr.co/gtrpdj)
 
