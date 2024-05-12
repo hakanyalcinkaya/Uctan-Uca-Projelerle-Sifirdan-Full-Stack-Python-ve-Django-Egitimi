@@ -8,9 +8,10 @@
 
 # Set - Cheat Sheet
 
-Bu cheat sheet, Python'da set'lerle çalışırken yaygın kullanılan metotların özetini verir. Yukarıdaki metotlar, kümelerle ilgili temel işlemleri kapsar.
- 
+Bu cheat sheet, Python'da set'lerle çalışırken yaygın kullanılan metotların özetini verir. Aşağıdaki metotlar, kümelerle ilgili temel işlemleri kapsar.
 
+  ![set_diagram](../000-Assets/015-Python---set-ile-Calismak/set_diagram.png)
+ 
 - **add()**
   - Kümeye yeni tek-bir- eleman ekler.
   - Örnek:
@@ -63,7 +64,7 @@ Bu cheat sheet, Python'da set'lerle çalışırken yaygın kullanılan metotlar�
     ```
 
 - **union()**
-  - İki kümedeki tüm unique elemanları getirir.
+  - İki kümedeki tüm biricik elemanları getirir, tekrarlamaz.
   - Kısayol gösterimi: `|` (pipe işareti).
   - Örnek:
     ```python
@@ -73,7 +74,6 @@ Bu cheat sheet, Python'da set'lerle çalışırken yaygın kullanılan metotlar�
     # {1, 2, 3, 4, 5}
     ```
     
-    ![set-diagram](000-Assets/015-Python---set-ile-Calismak/set_diagram.png) 
 
 - **discard()**
   - Belirtilen elemanı kümeden çıkarır. Eğer eleman kümede yoksa hata vermez.
