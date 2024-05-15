@@ -31,6 +31,7 @@ Bu cheat sheet, Python'da string'lerle çalışırken yaygın kullanılan metotl
   - Örnek:
     ```python
     greeting = "Hello world"
+
     greeting = greeting.upper()
     # "HELLO WORLD"
     ```
@@ -40,6 +41,7 @@ Bu cheat sheet, Python'da string'lerle çalışırken yaygın kullanılan metotl
   - Örnek:
     ```python
     greeting = "hello World"
+
     greeting = greeting.capitalize()
     # "Hello world"
     ```
@@ -50,6 +52,7 @@ Bu cheat sheet, Python'da string'lerle çalışırken yaygın kullanılan metotl
   - Örnek:
     ```python
     greeting = "he11o world"
+
     greeting = greeting.title()
     # "He11O World"
     ```
@@ -59,6 +62,7 @@ Bu cheat sheet, Python'da string'lerle çalışırken yaygın kullanılan metotl
   - Örnek:
     ```python
     greeting = "Hello world"
+
     greeting = greeting.lower()
     # "hello world"
     ```
@@ -69,6 +73,7 @@ Bu cheat sheet, Python'da string'lerle çalışırken yaygın kullanılan metotl
   - Örnek:
     ```python
     text = ",,,.sgfhelloworld..gs"
+
     text = text.strip(",.sgf")
     # "helloworld"
     ```
@@ -78,6 +83,7 @@ Bu cheat sheet, Python'da string'lerle çalışırken yaygın kullanılan metotl
   - Örnek:
     ```python
     greeting = "Hello world"
+
     index = greeting.find("l")
     # 2
     ```
@@ -87,6 +93,7 @@ Bu cheat sheet, Python'da string'lerle çalışırken yaygın kullanılan metotl
   - Örnek:
     ```python
     text = "Hello world"
+
     text = text.replace("l", "1", 2)
     # "He11o world"
     ```
@@ -96,6 +103,7 @@ Bu cheat sheet, Python'da string'lerle çalışırken yaygın kullanılan metotl
   - Örnek:
     ```python
     text = "Hello world"
+
     words = text.split()
     # ["Hello", "world"]
     ```
@@ -106,6 +114,7 @@ Bu cheat sheet, Python'da string'lerle çalışırken yaygın kullanılan metotl
   - Örnek:
     ```python
     text = "He11oW0rld"
+
     text.isalnum()
     # True
     ```
@@ -115,6 +124,7 @@ Bu cheat sheet, Python'da string'lerle çalışırken yaygın kullanılan metotl
   - Örnek:
     ```python
     text = "He11oW0rld"
+
     text.isalpha()
     # False
     ```
@@ -124,6 +134,7 @@ Bu cheat sheet, Python'da string'lerle çalışırken yaygın kullanılan metotl
   - Örnek:
     ```python
     text = "He11oW0rld"
+
     text.isdigit()
     # False
     ```
@@ -135,10 +146,12 @@ Bu cheat sheet, Python'da string'lerle çalışırken yaygın kullanılan metotl
     ```python
     name = "Ahmet"
     age = 25
+
     text = "Benim adım {} ve {} yaşındayım.".format(name, age)
     # 'Benim adım Ahmet ve 25 yaşındayım.'
-    text2 = f"Benim adım {name} ve {age} yaşındayım."  
-    # 'Benim adım Ahmet ve 25 yaşındayım.'
+
+    text2 = f"Benim adım {name} ve {age+1} yaşındayım."  
+    # 'Benim adım Ahmet ve 26 yaşındayım.'
     ```
 
 
