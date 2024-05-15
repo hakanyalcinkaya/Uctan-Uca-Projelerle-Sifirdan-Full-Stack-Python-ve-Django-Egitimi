@@ -11,7 +11,8 @@ Bu cheat sheet, Python'da tuple'larla çalışırken yaygın kullanılan metotla
   - Tuple içinde belirli bir elemanın kaç kez olduğunu gösterir.
   - Örnek:
     ```python
-    tup1e = (1, 2, 3) 
+    tup1e = (1, 2, 3)
+
     tup1e.count(3) 
     # 1
     ```
@@ -20,7 +21,8 @@ Bu cheat sheet, Python'da tuple'larla çalışırken yaygın kullanılan metotla
   - Tuple içinde belirli bir elemanın ilk bulunduğu indeksi döndürür.
   - Örnek:
     ```python
-    tup1e = (1, 2, 3, 4, 3) 
+    tup1e = (1, 2, 3, 4, 3)
+
     tup1e.index(3) 
     # 2
     ```
@@ -30,6 +32,7 @@ Bu cheat sheet, Python'da tuple'larla çalışırken yaygın kullanılan metotla
   - Örnek:
     ```python
     tup1e = (1, 2, 3, 4, 3) 
+
     len(tup1e) 
     # 5
     ```
@@ -39,8 +42,10 @@ Bu cheat sheet, Python'da tuple'larla çalışırken yaygın kullanılan metotla
   - Örnek:
     ```python
     numbers = [1, 2, 3]
+
     tuple(numbers)
     # (1, 2, 3)
+
     tuple("burak") 
     # ("b", "u", "r", "a", "k")
     ```
@@ -49,6 +54,8 @@ Bu cheat sheet, Python'da tuple'larla çalışırken yaygın kullanılan metotla
   - Örnekler:
     ```python
     tup1 = (1, 2, 3)  # Normal tuple oluşturma.
+
     tup2 = 1, 2, 3  # Parantez olmadan da tuple oluşturulabilir.
+    
     tup3 = ()  # Boş bir tuple oluşturur.
     ``` 
