@@ -21,3 +21,125 @@
 - [Online Python Dene](https://replit.com/lm/python3)
 - [What is camelCase, PascalCase, kebab-case and snake_case?](https://winnercrespo.com/naming-conventions/)
 - [Python String Format](https://pyformat.info/)
+
+# String - Cheat Sheet
+
+Bu cheat sheet, Python'da string'lerle çalışırken yaygın kullanılan metotların özetini verir.
+
+- **upper()**
+  - String bir ifadenin tüm harflerini büyük harfe çevirir.
+  - Örnek:
+    ```python
+    greeting = "Hello world"
+    greeting = greeting.upper()
+    # "HELLO WORLD"
+    ```
+
+- **capitalize()**
+  - String bir ifadenin ilk harfini büyük, geriye kalanını küçük harfe çevirir.
+  - Örnek:
+    ```python
+    greeting = "hello World"
+    greeting = greeting.capitalize()
+    # "Hello world"
+    ```
+
+- **title()**
+  - String bir ifadede her bir kelimenin ilk karakterini büyük harfe çevirir.
+  - *NOT*: Kelime sayı veya sembol içeriyorsa bu karakterlerden sonraki ilk harfi büyütür.
+  - Örnek:
+    ```python
+    greeting = "he11o world"
+    greeting = greeting.title()
+    # "He11O World"
+    ```
+
+- **lower()**
+  - String bir ifadenin tüm harflerini küçük harfe çevirir.
+  - Örnek:
+    ```python
+    greeting = "Hello world"
+    greeting = greeting.lower()
+    # "hello world"
+    ```
+
+- **strip()**, **lstrip()**, **rstrip()**
+  - String bir ifadenin başında ve sonundaki boşlukları kaldırır. Argüman olarak kaldırılmak istenen karakterler yazılabilir. 
+  - `lstrip()` ifadenin başındaki `rstrip()` ise ifadenin sonundaki boşluklar veya yazılan argümanları kaldırmak için kullanılır.
+  - Örnek:
+    ```python
+    text = ",,,.sgfhelloworld..gs"
+    text = text.strip(",.sgf")
+    # "helloworld"
+    ```
+
+- **find()**
+  - String bir ifadede belirtilen değerin karşılaşıldığı ilk indeksi gösterir. Değer bulunamazsa -1 sonucunu verir. `index()` ile aynı mantıkta çalışır tek farkı `index()` ile aranan değer bulunamadığında hata alınmasıdır.
+  - Örnek:
+    ```python
+    greeting = "Hello world"
+    index = greeting.find("l")
+    # 2
+    ```
+
+- **replace()**
+  - String bir ifadede belirtilen ifadeyi yeni bir ifadeyle değiştirir, özel bir sınırlama yapılmadıysa tüm eşleşmeleri değiştirir. Son argüman olarak kaç tane değişim yapılacağı belirtilebilir. 
+  - Örnek:
+    ```python
+    text = "Hello world"
+    text = text.replace("l", "1", 2)
+    # "He11o world"
+    ```
+
+- **split()**
+  - String bir ifadenin her bir kelimesini liste elemanına dönüştürür. Herhangi bir argüman verilmedikçe varsayılan ayırıcı(seperator) boşluktur.
+  - Örnek:
+    ```python
+    text = "Hello world"
+    words = text.split()
+    # ["Hello", "world"]
+    ```
+
+- **isalnum()**
+  - String bir ifadenin tüm karakterlerinin alfanumerik(harf ve rakamlardan oluşan) olup olmadığını kontrol eder. 
+  - *NOT:* Boşluk olması ifadenin alfanumerik olmasını engeller.
+  - Örnek:
+    ```python
+    text = "He11oW0rld"
+    text.isalnum()
+    # True
+    ```
+
+- **isalpha()**
+  - String bir ifadede tüm karakterlerin harf olup olmadığını kontrol eder.
+  - Örnek:
+    ```python
+    text = "He11oW0rld"
+    text.isalpha()
+    # False
+    ```
+
+- **isdigit()**
+  - String bir ifadede tüm karakterlerin rakam olup olmadığını kontrol eder.
+  - Örnek:
+    ```python
+    text = "He11oW0rld"
+    text.isdigit()
+    # False
+    ```
+
+- **format()**, **f-string**
+  - String bir ifadeyi değişkenin tipini koruyan şekilde oluşturur. 
+  - Süslü parentezler ile gösterilen yer tutucular içindeki değerler biçimlendirilebilir.
+  - Örnek:
+    ```python
+    name = "Ahmet"
+    age = 25
+    text = "Benim adım {} ve {} yaşındayım.".format(name, age)
+    # 'Benim adım Ahmet ve 25 yaşındayım.'
+    text2 = f"Benim adım {name} ve {age} yaşındayım."  
+    # 'Benim adım Ahmet ve 25 yaşındayım.'
+    ```
+
+
+
