@@ -16,6 +16,7 @@ Bu cheat sheet, Python'da list'lerle çalışırken yaygın kullanılan metotlar
   - Örnek:
     ```python
     numbers = [1, 2, 3]
+
     numbers.append(4) 
     # numbers = [1, 2, 3, 4]
     ```
@@ -25,6 +26,7 @@ Bu cheat sheet, Python'da list'lerle çalışırken yaygın kullanılan metotlar
   - Örnek:
     ```python
     numbers = [1, 2, 3]
+
     numbers.insert(99, 2) 
     # numbers = [1, 2, 99, 3]
     ```
@@ -34,6 +36,7 @@ Bu cheat sheet, Python'da list'lerle çalışırken yaygın kullanılan metotlar
   - Örnek:
     ```python
     numbers = [1, 2, 3, 2]
+
     numbers.remove(2) 
     # numbers = [1, 3, 2]
     ```
@@ -43,6 +46,7 @@ Bu cheat sheet, Python'da list'lerle çalışırken yaygın kullanılan metotlar
   - Örnek:
     ```python
     numbers = [1, 2, 3, 2]
+
     popped_item = numbers.pop() 
     # popped_item = 2
     # numbers = [1, 2, 3]
@@ -54,6 +58,7 @@ Bu cheat sheet, Python'da list'lerle çalışırken yaygın kullanılan metotlar
   - Örnek:
     ```python
     numbers = [1, 2, 3, 2]
+
     numbers.clear() 
     # []
     ```
@@ -63,6 +68,7 @@ Bu cheat sheet, Python'da list'lerle çalışırken yaygın kullanılan metotlar
   - Örnek:
     ```python
     numbers = [1, 2, 3, 2, 4, 2]
+
     numbers.count(2) 
     # 3
     ```
@@ -72,6 +78,7 @@ Bu cheat sheet, Python'da list'lerle çalışırken yaygın kullanılan metotlar
   - Örnek:
     ```python
     numbers = [1, 2, 3, 2, 4, 2]
+
     numbers.index(2) 
     # 1
     ```
@@ -81,6 +88,7 @@ Bu cheat sheet, Python'da list'lerle çalışırken yaygın kullanılan metotlar
   - Örnek:
     ```python
     numbers = [1, 2, 3, 2, 4, 2]
+
     numbers.reverse() 
     # numbers = [2, 4, 2, 3, 2, 1]
     ```
@@ -90,16 +98,19 @@ Bu cheat sheet, Python'da list'lerle çalışırken yaygın kullanılan metotlar
   - Örnek:
     ```python
     numbers = [3, 1, 4, 2]
+
     numbers.sort()  
     # numbers = [1, 2, 3, 4]
 
-    fruits = ['banana', 'apple', 'cherry']
-    fruits.sort()  
-    # fruits = ['apple', 'banana', 'cherry']
-
     numbers = [3, 1, 4, 2]
+    
     numbers.sort(reverse=True)  
     # numbers = [4, 3, 2, 1]
+
+    fruits = ['banana', 'apple', 'cherry']
+
+    fruits.sort()  
+    # fruits = ['apple', 'banana', 'cherry']
     ```
 
 - **extend()**
@@ -107,8 +118,10 @@ Bu cheat sheet, Python'da list'lerle çalışırken yaygın kullanılan metotlar
   - Örnek:
     ```python
     numbers = [1, 2, 3]
+
     numbers.extend([4, 5, 6])  
     # numbers = [1, 2, 3, 4, 5, 6]
+    
     numbers.extend("word")
     # numbers = [1, 2, 3, 4, 5, 6, "w", "o", "r", "d"]
     ```
