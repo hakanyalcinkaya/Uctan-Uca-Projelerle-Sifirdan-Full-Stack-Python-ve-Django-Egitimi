@@ -1,4 +1,4 @@
-# Python: Set ile Calismak
+# Python: Tuple ile Calismak
 
 ## Icerik
 - [Tuple ile Calismak](001-tuple-ile-calismak.py)
