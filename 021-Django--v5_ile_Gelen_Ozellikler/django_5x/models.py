@@ -1,5 +1,6 @@
 from django.db import models
 from django.db.models.functions import Now
+from django.db.models import F
 from faker import Faker
 
 
@@ -35,3 +36,25 @@ class Winner(models.Model):
     sport = models.CharField(max_length=20, choices=SPORT_CHOICES)
     score = models.IntegerField(choices=get_scores)
     job = models.CharField(max_length=100, default="", choices=get_jobs)
+
+
+# Database generated model field (VeriTabaninda Otomatik Hesaplanarak Olusturulmus Bilgiler)
+
+class Square(models.Model):
+    side = models.IntegerField()
+    area = models.GeneratedField(
+        expression=F("side") * F("side"),
+        output_field=models.BigIntegerField(),
+        db_persist=True,
+    )
+
+
+class ProductItem(models.Model):
+    name = models.CharField(max_length=20)
+    price = models.DecimalField(max_digits=6, decimal_places=2)
+    quantity = models.PositiveSmallIntegerField(db_default=1)
+    total_price = models.GeneratedField(
+        expression=F("price") * F("quantity"),
+        output_field=models.DecimalField(max_digits=12, decimal_places=2),
+        db_persist=True,
+    )
