@@ -3,6 +3,8 @@ from django.db.models.functions import Now
 from django.db.models import F
 from faker import Faker
 
+# Link: https://docs.djangoproject.com/en/5.0/releases/5.0/
+
 
 class User(models.Model):
     full_name = models.CharField(max_length=100)
