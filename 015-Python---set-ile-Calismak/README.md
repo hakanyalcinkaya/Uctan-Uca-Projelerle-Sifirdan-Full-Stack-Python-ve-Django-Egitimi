@@ -17,6 +17,7 @@ Bu cheat sheet, Python'da set'lerle çalışırken yaygın kullanılan metotlar�
   - Örnek:
     ```python
     s = {1, 2, 3}
+
     s.add(4) 
     # {1, 2, 3, 4}
     ```
@@ -26,6 +27,7 @@ Bu cheat sheet, Python'da set'lerle çalışırken yaygın kullanılan metotlar�
   - Örnek:
     ```python
     s = {1, 2, 3}
+
     s.clear()  
     # Boş bir set
     ```
@@ -37,6 +39,7 @@ Bu cheat sheet, Python'da set'lerle çalışırken yaygın kullanılan metotlar�
     ```python
     s1 = {1, 2, 3}
     s2 = {3, 4, 5}
+
     diff = s1.difference(s2)  
     # {1, 2}
     ```
@@ -48,6 +51,7 @@ Bu cheat sheet, Python'da set'lerle çalışırken yaygın kullanılan metotlar�
     ```python
     s1 = {1, 2, 3}
     s2 = {2, 3, 4}
+
     sym_diff = s1.symmetric_difference(s2)  
     # {1, 4}
     ```
@@ -59,6 +63,7 @@ Bu cheat sheet, Python'da set'lerle çalışırken yaygın kullanılan metotlar�
     ```python
     s1 = {1, 2, 3}
     s2 = {3, 4, 5}
+
     common = s1.intersection(s2)  
     # {3}
     ```
@@ -70,6 +75,7 @@ Bu cheat sheet, Python'da set'lerle çalışırken yaygın kullanılan metotlar�
     ```python
     s1 = {1, 2, 3}
     s2 = {3, 4, 5}
+
     combined = s1.union(s2)  
     # {1, 2, 3, 4, 5}
     ```
@@ -80,6 +86,7 @@ Bu cheat sheet, Python'da set'lerle çalışırken yaygın kullanılan metotlar�
   - Örnek:
     ```python
     s = {1, 2, 3}
+
     s.discard(2)  # {1, 3}
     ```
 
@@ -88,6 +95,7 @@ Bu cheat sheet, Python'da set'lerle çalışırken yaygın kullanılan metotlar�
   - Örnek:
     ```python
     s = {1, 2, 3}
+
     s.remove(2)  # {1, 3}
     # s.remove(5)  # Hata: KeyError
     ```
@@ -97,6 +105,7 @@ Bu cheat sheet, Python'da set'lerle çalışırken yaygın kullanılan metotlar�
   - Örnek:
     ```python
     s = {1, 2, 3}
+
     s.pop()  
     # {3}
     ```
@@ -106,6 +115,7 @@ Bu cheat sheet, Python'da set'lerle çalışırken yaygın kullanılan metotlar�
   - Örnek:
     ```python
     s = {1, 2, 3}
+    
     s.update({3, 4, 5})  
     # {1, 2, 3, 4, 5}
     ```

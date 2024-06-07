@@ -15,12 +15,15 @@ Bu cheat sheet, Python'da dict'lerle çalışırken yaygın kullanılan metotlar
   - Örnek:
     ```python
     car = {
-    "brand": "Pego",
-    "model": "3008",
-    "stock": 3,
-    "price": 100,}
+        "brand": "Pego",
+        "model": "3008",
+        "stock": 3,
+        "price": 100,
+    }
+        
     car.get("brand")
     # "Pego" 
+
     car.get("age", "bilgi bulunamadi")
     # "bilgi bulunamadi"
     ```
@@ -31,12 +34,15 @@ Bu cheat sheet, Python'da dict'lerle çalışırken yaygın kullanılan metotlar
   - Örnek:
     ```python
     car = {
-    "brand": "Pego",
-    "model": "3008",
-    "stock": 3,
-    "price": 100,}
+        "brand": "Pego",
+        "model": "3008",
+        "stock": 3,
+        "price": 100,
+    }
+
     popped_value = car.pop("brand")
     # popped_value = "Pego"
+
     car.pop("age", "bilgi bulunamadi")
     # "bilgi bulunamadi"
     ```
@@ -46,10 +52,12 @@ Bu cheat sheet, Python'da dict'lerle çalışırken yaygın kullanılan metotlar
   - Örnek:
     ```python
     car = {
-    "brand": "Pego",
-    "model": "3008",
-    "stock": 3,
-    "price": 100,}
+        "brand": "Pego",
+        "model": "3008",
+        "stock": 3,
+        "price": 100,
+    }
+
     popped_pair = car.popitem()
     # popped_pair = ("price", 100)
     ```
@@ -59,10 +67,12 @@ Bu cheat sheet, Python'da dict'lerle çalışırken yaygın kullanılan metotlar
   - Örnek:
     ```python
     car = {
-    "brand": "Pego",
-    "model": "3008",
-    "stock": 3,
-    "price": 100,}
+        "brand": "Pego",
+        "model": "3008",
+        "stock": 3,
+        "price": 100,
+    }
+
     keys = list(car.keys())
     # keys = ["brand", "model", "stock", "price"]
     ```
@@ -72,10 +82,12 @@ Bu cheat sheet, Python'da dict'lerle çalışırken yaygın kullanılan metotlar
   - Örnek:
     ```python
     car = {
-    "brand": "Pego",
-    "model": "3008",
-    "stock": 3,
-    "price": 100,}
+        "brand": "Pego",
+        "model": "3008",
+        "stock": 3,
+        "price": 100,
+    }
+
     values = list(car.values())
     # values = ["Pego", "3008", 3, 100] 
     ```
@@ -85,12 +97,19 @@ Bu cheat sheet, Python'da dict'lerle çalışırken yaygın kullanılan metotlar
   - Örnek:
     ```python
     car = {
-    "brand": "Pego",
-    "model": "3008",
-    "stock": 3,
-    "price": 100,}
+        "brand": "Pego",
+        "model": "3008",
+        "stock": 3,
+        "price": 100,
+    }
+
     items = list(car.items())
-    # values = [('brand', 'Pego'), ('model', '3008'), ('stock', 3), ('price', 100)]
+    # values = [
+    #     ('brand', 'Pego'),
+    #     ('model', '3008'), 
+    #     ('stock', 3), 
+    #     ('price', 100)
+    # ]
     ```
 
 - **clear()**
@@ -98,10 +117,12 @@ Bu cheat sheet, Python'da dict'lerle çalışırken yaygın kullanılan metotlar
   - Örnek:
     ```python
     car = {
-    "brand": "Pego",
-    "model": "3008",
-    "stock": 3,
-    "price": 100,}
+        "brand": "Pego",
+        "model": "3008",
+        "stock": 3,
+        "price": 100,
+    }
+
     car.clear()
     # {}
     ```
@@ -111,17 +132,32 @@ Bu cheat sheet, Python'da dict'lerle çalışırken yaygın kullanılan metotlar
   - Örnek:
     ```python
     car = {
-    "brand": "Pego",
-    "model": "3008",
-    "stock": 3,
-    "price": 100,}
-    car.update({"brand": "Reno"})
-    # car = {"brand": "Reno", "model": "3008", "stock": 3, "price": 100,}
-    colors = {
-    "color": "White"
+        "brand": "Pego",
+        "model": "3008",
+        "stock": 3,
+        "price": 100,
     }
+
+    car.update({"brand": "Reno"})
+    # car = {
+    #     "brand": "Reno", 
+    #     "model": "3008", 
+    #     "stock": 3, 
+    #     "price": 100,
+    # }
+
+    colors = {
+        "color": "White"
+    }
+
     car.update(colors)
-    # car = {"brand": "Reno", "model": "3008", "stock": 3, "price": 100, "color": "White", }
+    # car = {
+    #     "brand": "Reno", 
+    #     "model": "3008", 
+    #     "stock": 3, 
+    #     "price": 100
+    #     "color": "White", 
+    # }
     ```
 
 ## BONUS 
@@ -131,11 +167,22 @@ Bu cheat sheet, Python'da dict'lerle çalışırken yaygın kullanılan metotlar
   - Örnek:
     ```python
     keys = ("brand", "model", "stock") # ya da keys = ["brand", "model", "stock"]
+    
     car = dict.fromkeys(keys)
-    # car = {"brand": "None", "model": "None", "stock": "None",}
+    # car = {
+    #     "brand": "None", 
+    #     "model": "None", 
+    #     "stock": "None",
+    # }
+    
     default_value = "değer"
+
     car = dict.fromkeys(keys, default_value)
-    # car = {"brand": "değer", "model": "değer", "stock": "değer",}
+    # car = {
+    #     "brand": "değer", 
+    #     "model": "değer", 
+    #     "stock": "değer",
+    # }
     ```
     
 - **setdefault()**
@@ -143,13 +190,22 @@ Bu cheat sheet, Python'da dict'lerle çalışırken yaygın kullanılan metotlar
   - Örnek:
     ```python
     car = {
-    "brand": "Pego",
-    "model": "3008",
-    "stock": 3,
-    "price": 100,}
+        "brand": "Pego",
+        "model": "3008",
+        "stock": 3,
+        "price": 100,
+    }
+
     car.setdefault("brand")
     # "Pego"
-    car.setdefault("color","white")
+
+    car.setdefault("color", "white")
     # "white"
-    # car = {"brand": "Pego", "model": "3008", "stock": 3, "price": 100, "color": "white", }
+    # car = {
+    #     "brand": "Pego", 
+    #     "model": "3008", 
+    #     "stock": 3, 
+    #     "price": 100, 
+    #     "color": "white", 
+    # }
     ```
