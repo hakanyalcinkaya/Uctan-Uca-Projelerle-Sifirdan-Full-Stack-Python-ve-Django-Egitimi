@@ -1,4 +1,5 @@
 # Ubuntu Server Üzerinde Birden Fazla Django Projesinin NGINX, uWSGI ve PostgreSQL ile Kurulumu
+[Kullanilan Kaynak Dokuman](https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-uwsgi-and-nginx-on-ubuntu-16-04#installing-uwsgi)
 
 **Not:** [Projelerle Django Eğitimi](http://lnk.ktlzr.co/pddj) serisinde projelerimizi yayına almak için 2 farklı bölüm hazırladım. Aşağıdaki dökümantasyon kurulumu zor olan Linux sunuculara terminal ile bağlanarak yapabileceğiniz bir kurulum yöntemidir. Bu yöntemi öğrenmeden önce DigitalOcean'ın App Platform yöntemi ile Django projelerinizi kurmayı öğrenmenizi tavsiye ederim.
 
