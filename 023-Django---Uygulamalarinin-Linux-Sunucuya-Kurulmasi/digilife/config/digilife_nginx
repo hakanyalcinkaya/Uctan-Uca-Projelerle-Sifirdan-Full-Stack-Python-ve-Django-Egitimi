@@ -1,0 +1,19 @@
+server {
+    listen 80;
+    server_name digilife.com www.digilife.com;
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    
+    location /static/ {
+        root /var/www/digilife;
+    }
+
+    location /media/ {
+        root /var/www/digilife;
+    }
+
+    location / {
+        include         uwsgi_params;
+        uwsgi_pass      unix:/run/uwsgi/digilife.sock;
+    }
+}
