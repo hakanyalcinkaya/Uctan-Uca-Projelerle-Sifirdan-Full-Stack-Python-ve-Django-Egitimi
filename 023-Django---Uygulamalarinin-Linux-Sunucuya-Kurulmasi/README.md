@@ -1,4 +1,7 @@
 # Ubuntu Server Üzerinde Birden Fazla Django Projesinin NGINX, uWSGI ve PostgreSQL ile Kurulumu
+
+**Not:** [Projelerle Django Eğitimi](http://lnk.ktlzr.co/pddj) serisinde projelerimizi yayına almak için 2 farklı bölüm hazırladım. Aşağıdaki dökümantasyon kurulumu zor olan Linux sunuculara terminal ile bağlanarak yapabileceğiniz bir kurulum yöntemidir. Bu yöntemi öğrenmeden önce DigitalOcean'ın App Platform yöntemi ile Django projelerinizi kurmayı öğrenmenizi tavsiye ederim.
+
 > Bu dökümantasyon, Ubuntu sunucusu üzerinde birden fazla Django projesinin NGINX, uWSGI ve PostgreSQL ile nasıl kurulacağını adım adım anlatmaktadır.
 
 > Projelerin isimleri firstsite ve secondsite olarak belirlenmiştir.
