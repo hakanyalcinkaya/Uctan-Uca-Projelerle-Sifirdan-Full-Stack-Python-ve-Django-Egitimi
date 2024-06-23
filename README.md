@@ -22,4 +22,5 @@
 - [x] Django Proje 2
 - [x] Django Proje 3
 - [x] Django Proje 4
-- [ ] Django Projelerinin Yayına Alınması
+- [x] Django Projelerinin App Platform ile Yayına Alınması
+- [x] Django Projelerinin Linux Sunucu Üzerinde Yayına Alınması
