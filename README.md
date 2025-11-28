@@ -1,6 +1,6 @@
-[![Udemy: Uçtan Uca Projelerle Sıfırdan Full Stack Python ve Django Eğitimi](https://github.com/hakanyalcinkaya/hakanyalcinkaya/raw/main/assets/img/udemy_python_django_v4.jpg)](http://lnk.ktlzr.co/gtrpdj)
+[![Udemy: Uçtan Uca Projelerle Sıfırdan Full Stack Python ve Django Eğitimi](https://github.com/hakanyalcinkaya/hakanyalcinkaya/raw/main/assets/img/udemy_python_django_v4.jpg)](https://link.hakanyalcinkaya.dev/gtrpdj)
 # Udemy: Uçtan Uca Projelerle Sıfırdan Full Stack Python ve Django Eğitimi
-[Eğitimi İncelemek İçin Linke Tıklayabilirsiniz.](http://lnk.ktlzr.co/gtrpdj)
+[Eğitimi İncelemek İçin Linke Tıklayabilirsiniz.](https://link.hakanyalcinkaya.dev/gtrpdj)
 
 > Not: İçerikler oluşturulmaktadır. Index içerisindeki sıralama ve içerikler değişebilir
 
